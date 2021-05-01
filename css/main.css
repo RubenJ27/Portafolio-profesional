@@ -17,3 +17,8 @@ a{
 .navbar-brand > img {
 width: 55px;
 }
+
+.navbar-main .active{
+    text-decoration: underline wavy var(--color-purple);
+    text-underline-offset: 9px;
+}
