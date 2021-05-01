@@ -11,3 +11,9 @@
 a{
     color: inherit;
 }
+
+  /* ----> Nav  */
+
+.navbar-brand > img {
+width: 55px;
+}
