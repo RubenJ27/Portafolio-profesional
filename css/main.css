@@ -1,0 +1,13 @@
+:root {
+    --color-blue-medium: #8fe2e4;
+    --color-purple: #632ce7;
+    --color-gray: #ccc;
+    --color-gray-mediem: #f8f9fa;
+    --color-yellow: #fac32c;
+   }
+
+   /* ----General style---*/
+
+a{
+    color: inherit;
+}
