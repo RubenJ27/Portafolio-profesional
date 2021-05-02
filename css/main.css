@@ -15,10 +15,34 @@ a{
   /* ----> Nav  */
 
 .navbar-brand > img {
-width: 55px;
+    width: 55px;
 }
 
 .navbar-main .active{
     text-decoration: underline wavy var(--color-purple);
     text-underline-offset: 9px;
+}
+
+/* ----Header----*/
+.icons-social-networks > a{
+    --size: 40px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s filter;
+}
+.icons-social-networks > a:hover{
+    filter: opacity(0.5);
+}
+.bg-facebook{
+    background-color: #023696;
+}
+.bg-twitter{
+    background-color: #33a9f3;
+}
+.bg-dribbble{
+    background-color: #f1066b;
 }
