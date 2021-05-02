@@ -11,6 +11,10 @@
 a{
     color: inherit;
 }
+.container > .row {
+    margin-bottom: 3.6rem;
+    margin-top: 3.6rem;
+ }
 
   /* ----> Nav  */
 
@@ -70,6 +74,8 @@ a{
     bottom: calc( 98% - (var(--box-size) / 2) );
     left: calc( 98% - (var(--box-size) / 2) );
     background: linear-gradient(45deg, var(--color-gray-mediem) 45%, transparent 45%),
-    radial-gradient(var(--color-purple) 30%, var(--color-yellow), 30% 70% var(--color-gray-mediem) 70%, transparent 70%);
-
+    radial-gradient(var(--color-purple) 30%, var(--color-yellow) 30% 70%, var(--color-gray-mediem) 70%, transparent 70%);
+}
+.header-main{
+    min-height: 100vh;
 }
