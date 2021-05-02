@@ -52,7 +52,7 @@ a{
 }
 
 .photo-frame{
-    font-size: 20px;
+    font-size: 19px;
 }
 .photo-frame::before, .photo-frame::after{
     content: "";
@@ -60,8 +60,8 @@ a{
     width: var(--box-size);
     height: var(--box-size);
     position: absolute;
-    z-index: -80;
-    animation: turnZ 7s linear alternate-reverse;
+    z-index: -10;
+    animation: turnZ 7s linear alternate-reverse infinite;
 }
 .photo-frame::before{
     --box-size: 3em;
@@ -75,6 +75,11 @@ a{
     left: calc( 98% - (var(--box-size) / 2) );
     background: linear-gradient(45deg, var(--color-gray-mediem) 45%, transparent 45%),
     radial-gradient(var(--color-purple) 30%, var(--color-yellow) 30% 70%, var(--color-gray-mediem) 70%, transparent 70%);
+}
+@keyframes turnZ{
+    to {
+        transform: rotate(1turn);
+    }
 }
 .header-main{
     min-height: 100vh;
