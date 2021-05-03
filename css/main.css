@@ -98,3 +98,8 @@ a{
 .portfolio-item:hover > img {
     transform: scale(0.96);
 }
+/* ---> Clients ---*/
+.bg-purple{
+    background-color: rgba(131, 87, 235 / 0.3);
+    filter: opacity(0.55);
+}
