@@ -28,6 +28,9 @@ a{
 }
 
 /* ----Header----*/
+.header-main{
+    height: 100vh;
+}
 .icons-social-networks > a{
     --size: 40px;
     width: var(--size);
@@ -104,4 +107,16 @@ a{
 .bg-purple{
     background-color: rgba(131 87 235 / 0.3);
     filter: opacity(0.55);
+}
+
+@media screen and (max-width: 376px) {
+    body{
+        margin-top: 4rem;
+    }
+    .header-main{
+        height: initial;
+    }
+    .photo-frame{
+        font-size: 11px;
+    }
 }
