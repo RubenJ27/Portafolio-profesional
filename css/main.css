@@ -36,9 +36,11 @@ a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+.icons-social-networks > a, .sec-clients > a{
     transition: .5s filter;
 }
-.icons-social-networks > a:hover{
+.icons-social-networks > a:hover, .sec-clients > a:hover{
     filter: opacity(0.5);
 }
 .bg-facebook{
@@ -100,6 +102,6 @@ a{
 }
 /* ---> Clients ---*/
 .bg-purple{
-    background-color: rgba(131, 87, 235 / 0.3);
+    background-color: rgba(131 87 235 / 0.3);
     filter: opacity(0.55);
 }
