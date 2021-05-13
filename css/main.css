@@ -27,6 +27,14 @@ a{
     text-underline-offset: 9px;
 }
 
+.navbar-main img{
+    width: 2.3em;
+}
+
+#img-2-footer img{
+    width: 7.5em;
+}
+
 /* ----Header----*/
 .header-main{
     height: 100vh;
