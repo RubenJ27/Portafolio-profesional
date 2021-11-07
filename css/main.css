@@ -117,6 +117,33 @@ a{
     filter: opacity(0.55);
 }
 
+@media screen and (min-width: 500px) and (max-width: 769px){
+    .header-service{
+        margin: 15.5rem 0 1rem 0;
+    }
+
+    }
+
+@media screen and (min-width: 438px) and (max-width: 554px){
+        .header-service{
+            margin: 14.5rem 0 1rem 0;
+        }
+        
+    }
+
+    @media screen and (min-width: 441px) and (max-width: 470px){
+        .header-service{
+            margin: 10rem 0 1rem 0;
+        }
+        
+    }
+
+@media screen and (min-width: 377px) and (max-width: 437px){
+        .header-service{
+        margin: 6.8rem 0 1rem 0;   }
+        
+    }
+    
 @media screen and (max-width: 376px) {
     body{
         margin-top: 4rem;
