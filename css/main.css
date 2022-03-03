@@ -104,6 +104,9 @@ a{
     height: var(--box-size);
     padding: 10px;
 }
+.info{
+    margin: 50px 0;
+}
 /* ----> Portfolio ---*/
 .portfolio-item > img {
     transition: 0.4s transform;
