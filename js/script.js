@@ -21,13 +21,14 @@ addEventListener('DOMContentLoaded', () => {
    }
    /*Indicador de menu*/
 
-   const secciones = document.querySelectorAll('.seccion')
-   const menuItems = document.querySelectorAll('.menu_item')
+   const secciones = document.querySelectorAll('.seccion');
+   const menuItems = document.querySelectorAll('.menu_item');
 
    const funcionObserver = entries => {
        entries.forEach(entry => {
            if (entry.isIntersecting){
-               const itemActual = Array.from(menuItems).find(item => item.dataset.url === entry.target.id)
+               const itemActual = Array.from(menuItems).find(item => item.dataset.url === entry.target.id);
+               console.log(itemActual);
                itemActual.classList.add('active')
                for (const item of menuItems) {
                    if (item != itemActual){
