@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio profesional</title>
+    <!-- CSS Bootstrap v5-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/Mi logo/JadaLogo.png" type="image/png">
+</head>
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light navbar-main">
+        <div class="container">
+                <!-- Branding -->
+                <a href="#" class="navbar-brand">
+                    <img src="img/Mi logo/JadaLogo.png" alt="Brand Ruben Jaramillo" class="img-fluid">
+                </a>
+                <!-- Btn -->
+                <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon col-md-4"></span>
+
+                </button>
+                <!-- Items -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <div class="nav ms-auto text-dark flex-column flex-md-row">
+                        <a href="#secHome" class="menu_item nav-link active" data-url="secHome">Home</a>
+                        <a href="#secService" class="menu_item nav-link" data-url="secService">Services</a>
+                        <a href="#secPortfolio" class="menu_item nav-link" data-url="secPortfolio">Portfolio</a>
+                        <a href="#secContact" class="menu_item nav-link" data-url="secContact">Contact</a>
+                    </div>
+                </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="row align-items-center header-main justify-content-center seccion" id="secHome">
+            <div class="col-md-7 text-center text-md-start">
+                <!-- Greeting -->
+                <h1 class="display-2">
+                    <span class="d-block">Hello, </span>
+                    I'm Ruben Jaramillo
+                </h1>
+                <!-- Job -->
+                <p class="text-muted fw-light text-capitalize">Developer And Web Designer</p>
+                <!-- Social Networks -->
+                <div class="d-none d-md-block icons-social-networks">
+                    <!-- Fb -->
+                    <a href="#" target="_blank" class="bg-facebook">
+                        <img src="img/icons/facebook.svg" alt="Facebook" />
+                    </a>
+                    <!-- Tw -->
+                    <a href="#" target="_blank" class="bg-twitter mx-3">
+                        <img src="img/icons/twitter.svg" alt="Twitter" />
+                    </a>
+                    <!-- Dbbb -->
+                    <a href="#" target="_blank" class="bg-dribbble">
+                        <img src="img/icons/dribbble.svg" alt="Dribbble" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-8 col-md-4">
+                <div class="photo-frame position-relative shadow">
+                    <img src="img/RubenProfile.jpg" alt="Ruben Jaramillo" class="w-100">
+                </div>
+            </div>
+        </header>
+    </div>
+        <hr class="header-service">
+
+        <!-- Service -->
+        <section class="seccion row justify-content-around text-center" id="secService">
+            <!-- Title -->
+            <h2 class="col-12 display-4 text-capitalize mb-3">
+                What i do?
+             </h2>
+            <!-- Cards -->
+             <!-- Card-1 -->
+             <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
+                <!-- Icon -->
+                <img src="img/icons/pen.svg" alt="Icon pen" class="bg-danger bg-gradient d-inline-block rounded-circle mb-3 icon-service">
+                <!-- Title -->
+                <h3 class="text-capitalize">
+                   User Experience Desing
+                </h3>
+                <!-- Description -->
+                <p class="text-muted">
+                    Sites are designed based on the good experience of the user when interacting with it.
+                </p>
+                <!-- btn -->
+                <a href="" class="btn btn-outline-danger"> Go </a>
+            </article>
+            <!-- Card-2 -->
+            <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
+                <!-- Icon -->
+                <img src="img/icons/code.svg" alt="Icon code" class="bg-warning bg-gradient d-inline-block rounded-circle mb-3 icon-service">
+                <!-- Title -->
+                <h3 class="text-capitalize">
+                    Front-End Developer
+                </h3>
+                <!-- Description -->
+                <p class="text-muted">
+                    It works based on the demands of the clients with emphasis on good interaction with the sites and friendly colors for the most visual comfort.
+                </p>
+                <!-- btn -->
+                <a href="" class="btn btn-outline-danger"> Go </a>
+            </article>
+            <!-- Card-3 -->
+            <article class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-light mb-3 mb-md-0">
+                <!-- Icon -->
+                <img src="img/icons/brand.svg" alt="Icon brand" class="bg-info bg-gradient d-inline-block rounded-circle mb-3 icon-service">
+                <!-- Title -->
+                <h3 class="text-capitalize">
+                    Brand Identity Desing
+                </h3>
+                <!-- Description -->
+                <p class="text-muted">
+                    Based on the brand that represents our clients, we work so that the experience is the most satisfactory.
+                </p>
+                <!-- btn -->
+                <a href="" class="btn btn-outline-danger"> Go </a>
+            </article> 
+        </section>
+        <section class="row justify-content-center text-center text-md-start info">
+            <!-- Title -->
+            <h2 class="col-md-4 text-center display-4 text-capitalize">
+                Who I'm
+            </h2>
+            <!-- Info -->
+            <div class="col-10 col-md-8">
+                <p class="text-muted fw-light">I am Rubén, a young man who is passionate about the technological branch and the evolution it has had over time, and I want to offer a productive report to this industry.            
+                </p>
+                <a href="cv/CV-RJ.pdf" download="CV-Ruben J" class="btn btn-danger rounded-pill px-4">
+                    Download CV
+                </a>
+            </div>
+        </section>
+        <hr />
+
+        <!-- Portfolio -->
+        <main class="row justify-content-center pt-5 sec-portfolio-js seccion" id="secPortfolio">
+            <!-- column #1 -->
+            <div class=" col-10 col-md-4 order-2 order-md-1">
+                <div class="row">
+                    <!-- IMG #1 -->
+                    <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                        <img src="img/portfolio/Portfolio-09.png" alt="Modelado 3D" class="w-100 img-btn-modal-js">
+                    </a>
+                    <!-- IMG #2 -->
+                    <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                        <img src="img/portfolio/Portfolio-07.png" alt="Diseño grafico" class="w-100 img-btn-modal-js">
+                    </a>
+                    <!-- IMG #3 -->
+                    <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                        <img src="img/portfolio/Portfolio-08.png" alt="Branding" class="w-100 img-btn-modal-js">
+                    </a>
+                    <!-- IMG #4 -->
+                    <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                        <img src="img/portfolio/Arbol-navidad.PNG" alt="Branding" class="w-100 img-btn-modal-js">
+                    </a>
+                    <!-- IMG #5 -->
+                    <a href="" class="col-12 col-md-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                        <img src="img/portfolio/Menu-navegacion.PNG" alt="Branding" class="w-100 img-btn-modal-js">
+                    </a>
+                </div>
+            </div>
+            <!-- column #2 -->
+            <div class="col-10 col-md-8 order-1 order-md-2">
+                <div class="row">
+                    <h2 class="col-12 py-3 text-end display-4">
+                        Projects
+                    </h2>
+                    <!-- Img #1 -->
+                    <a href="https://www.oldaness.com/" class="col-12 col-md-12 mb-3 portfolio-item">
+                        <img src="img/portfolio/Web-oldaness.PNG" alt="Branding" class="w-100 img-btn-modal-js">
+                    </a>
+                    <!-- Img #2 -->
+                    <a href="" class="col-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                        <img src="img/portfolio/Clon-instagram.PNG" alt="Web desing" class="w-100 img-btn-modal-js">
+                    </a>
+                     <!-- Img #3 -->
+                     <a href="" class="col-12 col-md-12 mb-3 portfolio-item" data-bs-toggle="modal" data-bs-target="#modal-portfolio">
+                        <img src="img/portfolio/Web-rio-software.PNG" alt="Ilustration" class="w-100 img-btn-modal-js">
+                    </a>
+                     
+                </div>
+            </div>
+            <!-- General Modal -->
+            <div class="col-9 modal fade" id="modal-portfolio">
+                <div class="modal-dialog position-relative modal-dialog-centered">
+                    <img src="" alt="" class="w-100 img-modal-js">
+                </div>
+            </div>
+        </main>
+
+    
+
+    <!-- Clients -->
+    <div class="bg-purple d-none d-md-block">
+        <!-- Brands-->
+        <div class="container">
+            <div class="row align-items-center justify-content-around py-5 sec-clients">
+                <!-- Elemento #1 -->
+                <a href="#" class="col-sm-5 col-md-3">
+                    <img src="img/customers/dashlane.svg" alt="Dashlane" class="w-75 ">
+                </a>
+                <!-- Elemento #2 -->
+                <a href="#" class="col-sm-5 col-md-3">
+                    <img src="img/customers/aerospike.svg" alt="Aerospike" class="w-75 ">
+                </a>
+                <!-- Elemento #3 -->
+                <a href="#" class="col-sm-5 col-md-3">
+                    <img src="img/customers/typo3.svg" alt="Typo3" class="w-75 ">
+                </a>
+                <!-- Elemento #4 -->
+                <a href="#" class="col-sm-5 col-md-3">
+                    <img src="img/customers/kong.svg" alt="Kong" class="w-75 ">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="seccion container" id="secContact">
+        <!-- Contact -->
+        <section class="row justify-content-center">
+            <div class="col-9 col-lg-7 bg-white text-center py-4 px3 shadow position-relative photo-frame">
+                <p class="h6 text-muted fw-light">
+                    Have any in mind? Say hello at
+                </p>
+                <a href="mailto:tiburones.tk@gmail.com" class="h3 text-decoration-none text-break">
+                    tiburones.tk@gmail.com
+                </a>
+            </div>
+        </section>
+        <!-- Navbar -->
+        <div class="row justify-content-center text-center">
+                <!-- Brand -->
+                <a href="#" class="navbar-brand" id="img-2-footer">
+                        <img src="img/Mi logo/JadaLogo.png" alt="Brand Ruben Jaramillo">
+                </a>
+                <!-- Items -->
+                <nav class="nav col-11 justify-content-center mb-4">
+                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="#secService" class="nav-link">Services</a>
+                        <a href="#secPortfolio" class="nav-link">Portfolio</a>
+                        <a href="#secContact" class="nav-link">Contact</a>
+                </nav>
+                <!-- Social networks -->
+                <div class="icons-social-networks">
+                        <!-- Fb -->
+                        <a href="#" target="_blank" class="bg-facebook">
+                            <img src="img/icons/facebook.svg" alt="Facebook" />
+                        </a>
+                        <!-- Tw -->
+                        <a href="#" target="_blank" class="bg-twitter mx-3">
+                            <img src="img/icons/twitter.svg" alt="Twitter" />
+                        </a>
+                        <!-- Dbbb -->
+                        <a href="#" target="_blank" class="bg-dribbble">
+                            <img src="img/icons/dribbble.svg" alt="Dribbble" />
+                        </a>
+                </div>
+        </div>
+        
+
+
+    </div>
+    <!-- Footer -->
+    <footer class="bg-purple text-center p-4">
+        &#169; Ruben J 2021. All rights reserved
+    </footer>
+    
+</body>
+
+ <!-- JS Bootstrap -->
+ <script src="js/bootstrap.bundle.min.js"></script>
+ <!-- JS Main -->
+ <script src="js/script.js"></script>
+
+</html>
