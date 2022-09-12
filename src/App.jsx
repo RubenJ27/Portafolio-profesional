@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import { PortfolioNavigate } from './routes/PortfolioNavigate'
 
 function App() {
