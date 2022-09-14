@@ -39,6 +39,16 @@ export default function Navbar() {
                   Inicio
                 </span>
               </Link>
+
+              <Link
+                smooth
+                spy
+                to="about-me"
+              >
+                <span className="ml-2 mr-4 text-white text-xl cursor-pointer">
+                  Sobre mi
+                </span>
+              </Link>
               
               <Link
                 smooth
@@ -46,7 +56,7 @@ export default function Navbar() {
                 to="studies"
               >
                 <span className="ml-2 mr-4 text-white text-xl cursor-pointer">
-                  Estudios
+                  Servicios
                 </span>
               </Link>
               <Link
