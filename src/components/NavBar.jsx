@@ -6,7 +6,7 @@ export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="flex flex-wrap items-center justify-center px-2 py-3 bg-primary-color mb-3 fixed w-full">
+      <nav className="flex flex-col flex-wrap items-center justify-center px-2 py-3 bg-primary-color fixed w-full z-50">
         <div className="container flex flex-wrap items-center justify-center">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a

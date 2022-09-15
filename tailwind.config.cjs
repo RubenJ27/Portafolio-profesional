@@ -11,6 +11,10 @@ module.exports = {
       'quinario-color': '#00C5CC',
       'quinario-color-complement': '#E65900',
     },
+    height: {
+      '128': '75vh',
+    },
+    
   },
   },
   plugins: [],
