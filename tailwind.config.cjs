@@ -10,6 +10,9 @@ module.exports = {
       'quaternary-color-complement': '#993B00',
       'quinario-color': '#00C5CC',
       'quinario-color-complement': '#E65900',
+      'yellow-progress': '#FFD15C',
+      'red-progress': '#FF4C60',
+      'projects-management-progress': '#6C6CE5',
     },
     height: {
       '128': '75vh',
