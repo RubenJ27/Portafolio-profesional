@@ -26,6 +26,7 @@ export default function HomePage() {
                     </a>
                 </div>
 
+                {/* buttons */}
                 <div className="flex justify-center">
                   <button className="bg-quinario-color-complement text-white w-5/6 h-2/3 rounded-3xl mr-12">Perfil</button>
                   <button className="flex bg-quinario-color-complement text-white w-5/6 h-2/3 rounded-3xl items-center"><img src="src/assets/icons/github.svg" className="w-2/4 h-3/5 justify-center self-center" alt="Instagram" />GitHub</button>
