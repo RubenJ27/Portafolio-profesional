@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import './index.css'
 import ProfilePage from "./pages/ProfilePage";
 import Services from "./pages/Services";
+import Experience from "./pages/ExperiencePage";
 
 function App() {
 /*   const [count, setCount] = useState(0) */
@@ -14,6 +15,7 @@ function App() {
     <HomePage />
     <ProfilePage />
     <Services />
+    <Experience />
     <Footer />
     </>
   )

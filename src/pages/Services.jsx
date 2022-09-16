@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAward, faHand, faHandDots, faHandFist, faHandHolding, faHandHoldingDroplet, faHandPointer, faHandPointUp, faHeading, faMugHot, faThumbsUp, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import { faAward, faHand } from "@fortawesome/free-solid-svg-icons";
 
 export default function Services() {
   return (
@@ -58,9 +58,9 @@ export default function Services() {
 
         {/* click contact */}
 
-        <div className="flex container justify-center w-2/4 bg-secondary-color h-full py-3 mt-10 rounded-lg">
+        <div className="flex container justify-center w-2/4 bg-secondary-color h-full py-3 mt-10 mb-5 rounded-lg">
           <div className="flex h-2/4">
-            <p className="text-white">¿Buscas un trabajo personalizado?</p> <a className="text-quinario-color-complement cursor-pointer mx-2">Click aqui</a> <p className="text-white"> para contactar conmigo. </p><FontAwesomeIcon icon={faHandPointer} className="text-white ml-2 text-2xl my-auto" />
+            <p className="text-white">¿Buscas un trabajo personalizado?</p> <a className="text-quinario-color-complement cursor-pointer mx-2">Click aqui</a> <p className="text-white"> para contactar conmigo. </p><FontAwesomeIcon icon={faHand} className="text-white ml-2 text-2xl my-auto" />
           </div>
         </div>
 

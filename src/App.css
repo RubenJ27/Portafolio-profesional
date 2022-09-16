@@ -1,10 +1,15 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+#line{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 2px;
+  height: 12rem;
+  background-color: white;
+  top: 10px;
+  bottom: 10px;
 }
-#example-navbar-danger{
-  color: red;
-}
+
+
 
