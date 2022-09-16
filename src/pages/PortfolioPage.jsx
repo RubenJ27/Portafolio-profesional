@@ -55,7 +55,7 @@ export const PortfolioPage = ({ url, title, description }) => {
           </div>
 
           {/* card */}
-          <div className="flex flex-col bg-secondary-color lg:flex flex-grow justify-around items-center w-2/4 h-2/5 px-5 py-8 rounded-md mr-20">
+          <div className="flex flex-col bg-secondary-color lg:flex flex-grow justify-around items-center w-2/4 h-2/5 px-5 py-8 rounded-md">
             <div className="flex flex-row justify-around">
               {/* card img */}
               <div className="flex flex-col justify-center w-2/5 h-full">
@@ -144,7 +144,7 @@ export const PortfolioPage = ({ url, title, description }) => {
           </div>
 
           {/* card */}
-          <div className="flex flex-col bg-secondary-color lg:flex flex-grow justify-around items-center w-2/4 h-2/5 px-5 py-8 rounded-md mr-20">
+          <div className="flex flex-col bg-secondary-color lg:flex flex-grow justify-around items-center w-2/4 h-2/5 px-5 py-8 rounded-md">
             <div className="flex flex-row justify-around">
               {/* card img */}
               <div className="flex flex-col justify-center w-2/5 h-full">
