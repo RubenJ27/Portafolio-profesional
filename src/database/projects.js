@@ -9,6 +9,18 @@ export const projects = [
     id: 2,
     title: 'Proyecto 2',
     description: 'Hola soy el ejemplo 2',
-    url: 'src/assets/portfolio/Menu-navegacion.png'
+    url: 'src/assets/portfolio/Portfolio–02.png'
+  },
+  {
+    id: 3,
+    title: 'Proyecto 3',
+    description: 'Hola soy el ejemplo 3',
+    url: 'src/assets/portfolio/Portfolio–02.png'
+  },
+  {
+    id: 4,
+    title: 'Proyecto 4',
+    description: 'Hola soy el ejemplo 4',
+    url: 'src/assets/portfolio/Portfolio–02.png'
   }
 ]

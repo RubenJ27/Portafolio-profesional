@@ -2,7 +2,8 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.jsx"],
   theme: {
-    extend: {colors: {
+    extend: {
+      colors: {
       'primary-color': '#00A0A6',
       'secondary-color': '#006366',
       'tertiary-color': '#00DFE6',
@@ -17,6 +18,17 @@ module.exports = {
     height: {
       '128': '75vh',
     },
+    placeholderColor: {
+      'white': '#ffffff',
+    },
+    gridTemplateColumns: {
+      
+      // Simple 16 column grid
+      'grid-col': 'repeat(16, minmax(0, 1fr))',
+
+      // Complex site-specific column configuration
+      'footer': '200px minmax(900px, 1fr) 100px',
+    }
     
   },
   },
