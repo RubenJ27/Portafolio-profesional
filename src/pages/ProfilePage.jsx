@@ -4,7 +4,7 @@ import { faAward, faMugHot, faThumbsUp, faUserGroup } from "@fortawesome/free-so
 export default function ProfilePage() {
   return (
     <>
-      <div className="flex flex-wrap justify-center items-center px-2 py-3 bg-secondary-color flex-end relative">
+      <div className="flex flex-wrap justify-center items-center px-2 py-3 bg-secondary-color flex-end relative" id="about-me">
         <h1 className="flex container text-white font-bold text-3xl w-full mt-12">
           Sobre mi
         </h1>
@@ -74,9 +74,9 @@ export default function ProfilePage() {
 
         {/* cards group */}
 
-        <div className="flex justify-around w-full my-9">
+        <div className="flex flex-col lg:flex-row container justify-between w-full my-9">
           {/* card-1 */}
-          <div className="bg-primary-color flex flex-row rounded-lg my-5">
+          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] lg:w-[20%] my-5">
             <div className="flex py-8 px-4">
             <FontAwesomeIcon icon={faThumbsUp} className="text-white text-5xl" />
             </div>
@@ -87,7 +87,7 @@ export default function ProfilePage() {
           </div>
 
           {/* card-2 */}
-          <div className="bg-primary-color flex flex-row rounded-lg w-[15rem] my-5">
+          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] lg:w-[20%] my-5">
             <div className="flex py-8 px-4">
             <FontAwesomeIcon icon={faMugHot} className="text-white text-5xl" />
             </div>
@@ -98,7 +98,7 @@ export default function ProfilePage() {
           </div>
 
           {/* card-3 */}
-          <div className="bg-primary-color flex flex-row rounded-lg my-5">
+          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] lg:w-[20%] my-5">
             <div className="flex py-8 px-4">
             <FontAwesomeIcon icon={faUserGroup} className="text-white text-5xl" />
             </div>
@@ -109,7 +109,7 @@ export default function ProfilePage() {
           </div>
 
            {/* card-4 */}
-           <div className="bg-primary-color flex flex-row rounded-lg my-5 w-[14rem]">
+           <div className="bg-primary-color flex flex-row rounded-lg w-[100%] lg:w-[20%] my-5">
             <div className="flex py-8 px-4">
             <FontAwesomeIcon icon={faAward} className="text-white text-5xl" />
             </div>

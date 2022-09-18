@@ -4,7 +4,7 @@ import { faHand } from "@fortawesome/free-solid-svg-icons";
 export default function Services() {
   return (
     <>
-      <div className="flex flex-wrap justify-center items-center px-2 py-3 bg-primary-color flex-end relative">
+      <div className="flex flex-wrap justify-center items-center px-2 py-3 bg-primary-color flex-end relative" id="services">
         <h1 className="flex container text-white font-bold text-3xl w-full my-12">
           Servicios
         </h1>

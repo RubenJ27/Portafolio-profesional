@@ -5,7 +5,7 @@ import {  } from "../App.css";
 export default function Experience() {
   return (
     <>
-      <div className="flex flex-wrap justify-center items-center px-2 py-3 bg-secondary-color flex-end relative">
+      <div className="flex flex-wrap justify-center items-center px-2 py-3 bg-secondary-color flex-end relative" id="experience">
         <h1 className="flex container text-white font-bold text-3xl w-full my-12">
           Experience
         </h1>

@@ -11,7 +11,7 @@ import {} from "../App.css";
 export default function ContactPage() {
   return (
     <>
-      <div className="flex flex-wrap justify-center items-center px-2 py-3 bg-secondary-color flex-end relative">
+      <div className="flex flex-wrap justify-center items-center px-2 py-3 bg-secondary-color flex-end relative" id="contact">
         <h1 className="flex container text-white font-bold text-3xl w-full my-12">
           Contacto
         </h1>

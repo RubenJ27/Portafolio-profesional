@@ -5,7 +5,7 @@ import { projects } from "../database/projects";
 export const PortfolioPage = ({ url, title, description }) => {
   return (
     <>
-      <div className="flex flex-wrap justify-center items-center px-2 py-3 bg-primary-color flex-end relative">
+      <div className="flex flex-wrap justify-center items-center px-2 py-3 bg-primary-color flex-end relative" id="portafolio">
         <h1 className="flex container text-white font-bold text-3xl w-full my-12">
           Portafolio
         </h1>
