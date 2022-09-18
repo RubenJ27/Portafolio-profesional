@@ -9,9 +9,10 @@ export default function Services() {
           Servicios
         </h1>
         <div className="container flex h-full">
-          <div className="flex h-2/4">
+          {/* flex flex-col md:flex-wrap md:flex-row lg:flex-row container justify-between w-full my-9 */}
+          <div className="flex flex-col sm:flex-col md:flex-row md:flex-wrap lg:flex-row lg:flex-nowrap justify-between h-2/4">
             {/* card */}
-            <div className="flex w-[33%] h-2/5 bg-secondary-color lg:w-auto lg:static lg:block lg:justify-start mr-5 rounded-xl">
+            <div className="flex flex-col mb-8 w-[100%] sm:mb-8 sm:w-[100%] md:mb-0 md:w-[48%] lg:w-[33%] lg:h-auto xl:h-auto h-2/5 bg-secondary-color lg:static lg:block lg:justify-start lg:mr-5 rounded-xl">
               <div className="flex justify-center m-0 p-0">
               <img
                 src="src/assets/img-services/service-web.svg"
@@ -25,7 +26,7 @@ export default function Services() {
             </div>
 
            {/* card */}
-           <div className="flex w-[33%] h-2/5 bg-secondary-color lg:w-auto lg:static lg:block lg:justify-start mr-5 rounded-xl">
+           <div className="flex flex-col mb-8 w-[100%] sm:mb-8 sm:w-[100%] md:mb-0 md:w-[49%] lg:w-[33%] lg:h-auto xl:h-auto h-2/5 bg-secondary-color lg:static lg:block lg:justify-start lg:mr-5 rounded-xl">
               <div className="flex justify-center m-0 p-0">
               <img
                 src="src/assets/img-services/service-design.svg"
@@ -39,7 +40,7 @@ export default function Services() {
             </div>
 
             {/* card */}
-            <div className="flex w-[33%] h-2/5 bg-secondary-color lg:w-auto lg:static lg:block lg:justify-start rounded-xl">
+            <div className="flex flex-col w-[100%] sm:w-[100%]  md:w-[100%] lg:w-[33%] h-auto bg-secondary-color lg:static lg:block lg:justify-start rounded-xl md:mt-5 lg:mt-0">
               <div className="flex justify-center m-0 p-0">
               <img
                 src="src/assets/img-services/project_5.svg"
@@ -58,9 +59,12 @@ export default function Services() {
 
         {/* click contact */}
 
-        <div className="flex container justify-center w-2/4 bg-secondary-color h-full py-3 mt-10 mb-5 rounded-lg">
+        <div className="flex container justify-center w-[100%] lg:w-[100%] xl:w-[50%] bg-secondary-color h-full py-3 mt-10 mb-5 rounded-lg">
           <div className="flex h-2/4">
-            <p className="text-white">¿Buscas un trabajo personalizado?</p> <a className="text-quinario-color-complement cursor-pointer mx-2">Click aqui</a> <p className="text-white"> para contactar conmigo. </p><FontAwesomeIcon icon={faHand} className="text-white ml-2 text-2xl my-auto" />
+            <div className="order-last hidden sm:flex sm:order-none">
+               <p className="text-white">¿Buscas un trabajo personalizado?</p>
+            </div>
+            <a className="text-quinario-color-complement cursor-pointer mx-2">Click aqui</a> <p className="text-white"> para contactar conmigo. </p><FontAwesomeIcon icon={faHand} className="text-white ml-2 text-2xl my-auto" />
           </div>
         </div>
 
