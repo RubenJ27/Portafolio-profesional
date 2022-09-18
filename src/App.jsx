@@ -19,11 +19,11 @@ function App() {
     <Navbar />
     <HomePage />
     <ProfilePage />
-    <Services />
+    {/* <Services />
     <ExperiencePage />
     <PortfolioPage />
     <ContactPage />
-    <Footer />
+    <Footer /> */}
     </>
   )
 }

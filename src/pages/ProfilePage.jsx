@@ -5,13 +5,13 @@ export default function ProfilePage() {
   return (
     <>
       <div className="flex flex-wrap justify-center items-center px-2 py-3 bg-secondary-color flex-end relative" id="about-me">
-        <h1 className="flex container text-white font-bold text-3xl w-full mt-12">
+        <h1 className="flex container text-white font-bold text-3xl w-full mt-12 mb-6">
           Sobre mi
         </h1>
-        <div className="container flex justify-evenly h-full">
-          <div className="flex items-center justify-center h-2/4">
+        <div className="container flex flex-wrap justify-evenly h-full">
+          <div className="flex container flex-col lg:flex-row items-center justify-center h-2/4">
             {/* img */}
-            <div className="w-full h-full flex flex-col justify-start lg:w-auto lg:static lg:block lg:justify-start">
+            <div className="hidden w-full h-full flex-col items-center lg:w-auto lg:static lg:block">
               <img
                 src="src/assets/profile/AvatarMaker-6.png"
                 className="flex w-2/4 h-full rounded-full"
@@ -21,8 +21,8 @@ export default function ProfilePage() {
 
             {/* group skills */}
 
-            <div className="bg-primary-color lg:flex flex-grow justify-between w-3/4 items-center h-2/4 p-10 py-10 flex rounded-md">
-              <div className="flex flex-col justify-center w-2/5">
+            <div className="bg-primary-color flex-col md:flex-row lg:flex-row lg:flex flex-grow justify-between items-center w-[100%] lg:w-3/4 h-2/4 p-10 py-10 flex rounded-md">
+              <div className="flex flex-col justify-center w-[100%] mb-10 md:w-2/5 lg:w-2/5">
                 <p className="flex flex-col text-xl text-white justify-center self-center items-center lg:flex-row lg:ml-auto">       
                   Soy un desarrollador web y me especializo en Front-end, también me encanta realizar proyectos de tecnología, hoteles, etc.
                 </p>
@@ -36,7 +36,7 @@ export default function ProfilePage() {
                 </button>
               </div>
 
-              <div className="bg-secondary-color w-2/5 rounded-md p-4">
+              <div className="flex flex-col bg-secondary-color w-[100%] md:w-2/5 lg:w-2/5 rounded-md p-4">
                 {/* skill-1 */}
                 <div className="w-full mb-8">
                   <div className="flex justify-between mb-2">
@@ -74,9 +74,9 @@ export default function ProfilePage() {
 
         {/* cards group */}
 
-        <div className="flex flex-col lg:flex-row container justify-between w-full my-9">
+        <div className="flex flex-col md:flex-wrap md:flex-row lg:flex-row container justify-between w-full my-9">
           {/* card-1 */}
-          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] lg:w-[20%] my-5">
+          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] md:w-[45%] lg:w-[20%] my-5">
             <div className="flex py-8 px-4">
             <FontAwesomeIcon icon={faThumbsUp} className="text-white text-5xl" />
             </div>
@@ -87,7 +87,7 @@ export default function ProfilePage() {
           </div>
 
           {/* card-2 */}
-          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] lg:w-[20%] my-5">
+          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] md:w-[45%] lg:w-[20%] my-5">
             <div className="flex py-8 px-4">
             <FontAwesomeIcon icon={faMugHot} className="text-white text-5xl" />
             </div>
@@ -98,7 +98,7 @@ export default function ProfilePage() {
           </div>
 
           {/* card-3 */}
-          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] lg:w-[20%] my-5">
+          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] md:w-[45%] lg:w-[20%] my-5">
             <div className="flex py-8 px-4">
             <FontAwesomeIcon icon={faUserGroup} className="text-white text-5xl" />
             </div>
@@ -109,7 +109,7 @@ export default function ProfilePage() {
           </div>
 
            {/* card-4 */}
-           <div className="bg-primary-color flex flex-row rounded-lg w-[100%] lg:w-[20%] my-5">
+           <div className="bg-primary-color flex flex-row rounded-lg w-[100%] md:w-[45%] lg:w-[20%] my-5">
             <div className="flex py-8 px-4">
             <FontAwesomeIcon icon={faAward} className="text-white text-5xl" />
             </div>
