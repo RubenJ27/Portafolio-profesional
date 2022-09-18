@@ -20,8 +20,8 @@ function App() {
     <HomePage />
     <ProfilePage />
     <Services />
-    {/* <ExperiencePage />
-    <PortfolioPage />
+    <ExperiencePage />
+   {/*  <PortfolioPage />
     <ContactPage />
     <Footer /> */}
     </>

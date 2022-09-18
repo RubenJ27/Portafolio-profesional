@@ -10,12 +10,12 @@ export default function Experience() {
           Experience
         </h1>
         <div className="container flex justify-evenly h-full mb-12">
-          <div className="flex justify-between h-2/4">
+          <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row justify-between h-2/4">
 
             {/* card */}
-            <div className="flex w-[33%] h-2/5 bg-primary-color lg:w-auto lg:static mr-5 justify-between items center rounded-xl py-7">
+            <div className="flex sm:w-[100%] mb-8 md:mb-8 md:w-[100%] lg:[33%] w-[100%] h-2/5 bg-primary-color lg:w-auto lg:static mr-5 justify-between items center rounded-xl py-7">
                 {/* card icon */}
-              <div className="flex flex-col m-4 mt-6 items-start justify-start self-start">
+              <div className="hidden sm:flex flex-col m-4 mt-6 items-start justify-start self-start">
 
                 <div className="flex flex-col w-full justify-center">
                 <FontAwesomeIcon
@@ -82,9 +82,9 @@ export default function Experience() {
             </div>
 
             {/* card */}
-            <div className="flex w-[33%] h-2/5 bg-primary-color lg:w-auto lg:static justify-between items center rounded-xl py-7">
+            <div className="flex sm:w-[100%] md:w-[100%] lg:[33%] w-[100%] h-2/5 bg-primary-color lg:w-auto lg:static justify-between items center rounded-xl py-7">
                 {/* card icon */}
-              <div className="flex flex-col m-4 mt-6 items-start justify-start self-start">
+              <div className="hidden sm:flex flex-col m-4 mt-6 items-start justify-start self-start">
 
                 <div className="flex flex-col w-full justify-center">
                 <FontAwesomeIcon
