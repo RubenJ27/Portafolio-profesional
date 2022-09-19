@@ -21,9 +21,9 @@ function App() {
     <ProfilePage />
     <Services />
     <ExperiencePage />
-   {/*  <PortfolioPage />
+    <PortfolioPage />
     <ContactPage />
-    <Footer /> */}
+    {/* <Footer /> */}
     </>
   )
 }

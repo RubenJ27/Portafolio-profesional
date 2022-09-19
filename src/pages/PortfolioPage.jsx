@@ -11,30 +11,32 @@ export const PortfolioPage = ({ url, title, description }) => {
         </h1>
 
         {/* row */}
-        <div className="container grid gap-4 grid-cols-2 grid-rows-2 justify-between w-full h-full mb-24">
+        <div className="container grid gap-4 grid-cols-1 lg:grid-cols-2 grid-rows-2 justify-between w-full h-full mb-24">
           {projects.map((project) => (
-            <div key={project.id} className="flex container justify-between flex-col bg-secondary-color lg:flex flex-grow items-center w-[100%] h-[100%] px-5 py-2 rounded-md mr-5 my-10">
+            <div key={project.id} className="flex container justify-between flex-col bg-secondary-color lg:flex flex-grow items-center w-[100%] h-[100%] px-5 py-5 rounded-md mr-5 my-10">
                 <div className="flex flex-row w-full h-full justify-around">
-                  <div className="flex flex-col justify-center w-2/5 h-full">
+                  <div className="flex flex-col justify-center w-[50%] h-[80%]">
                     <img
                       src={project.url}
-                      className="h-4/5 justify-center self-center rounded-lg"
+                      className="h-auto justify-center self-center rounded-lg"
                       alt="Instagram"
                     />
                   </div>
-                  <div className="bg-secondary-color w-[40%] rounded-md p-4">
+                  <div className="bg-secondary-color w-[50%] sm:w-[40%] rounded-md p-4">
                     <div className="w-full">
                       <h1 className="text-white text-3xl font-bold mb-4">
                         {project.title}
                       </h1>
-                      <p className="text-white">{project.description}</p>
+                      <p className="text-white text-lg">{project.description}</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="flex flex-row w-full justify-around my-5">
-                  <div className="flex justify-between">
-                  <button className="flex bg-quinario-color-complement text-white w-full h-full px-16 rounded-3xl items-center py-1 mr-5">
+                {/* btns */}
+                <div className="flex flex-row w-full justify-around mb-5">
+                  <div className="flex">
+                    <a href="https://github.com/RubenJ27/M4U3To-Do-RubenJaramillo">
+                      <button className="flex sm: bg-quinario-color-complement text-white w-auto h-auto px-4 sm:px-16 rounded-3xl items-center py-1 mr-5">
                     <FontAwesomeIcon
                       icon={["fab", "github"]}
                       className="text-white
@@ -42,16 +44,20 @@ export const PortfolioPage = ({ url, title, description }) => {
                     />{" "}
                     GitHub
                   </button>
+                  </a>
                   </div>
 
                   <div className="flex">
-                  <button className="flex bg-quinario-color-complement text-white w-full h-full px-16 rounded-3xl items-center py-1">
+                  <a href="https://storied-moonbeam-f41e99.netlify.app/">
+                  <button className="flex bg-quinario-color-complement text-white w-full h-full px-4 sm:px-16 rounded-3xl items-center py-1">
                     <FontAwesomeIcon
                       icon={faPlay}
                       className="text-white mr-3 text-3xl"
                     />
-                    Vista previa
+                    En vivo    
                   </button>
+                  </a>
+                    
                   </div>
                             
                 </div>
