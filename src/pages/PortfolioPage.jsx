@@ -35,7 +35,7 @@ export const PortfolioPage = ({ url, title, description }) => {
                 {/* btns */}
                 <div className="flex flex-row w-full justify-around mb-5">
                   <div className="flex">
-                    <a href="https://github.com/RubenJ27/M4U3To-Do-RubenJaramillo">
+                    <a href={project.url_github}>
                       <button className="flex sm: bg-quinario-color-complement text-white w-auto h-auto px-4 sm:px-16 rounded-3xl items-center py-1 mr-5">
                     <FontAwesomeIcon
                       icon={["fab", "github"]}
@@ -48,7 +48,7 @@ export const PortfolioPage = ({ url, title, description }) => {
                   </div>
 
                   <div className="flex">
-                  <a href="https://storied-moonbeam-f41e99.netlify.app/">
+                  <a href={project.url_live}>
                   <button className="flex bg-quinario-color-complement text-white w-full h-full px-4 sm:px-16 rounded-3xl items-center py-1">
                     <FontAwesomeIcon
                       icon={faPlay}

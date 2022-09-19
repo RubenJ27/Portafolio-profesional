@@ -13,7 +13,7 @@ export default function ProfilePage() {
             {/* img */}
             <div className="hidden w-full h-full flex-col items-center lg:w-auto lg:static lg:block">
               <img
-                src="src/assets/profile/AvatarMaker-6.png"
+                src="https://firebasestorage.googleapis.com/v0/b/imagenes-landing-page.appspot.com/o/AvatarMaker-6.png?alt=media&token=20307d50-76bb-454e-b808-90fdab9df2e4"
                 className="flex w-2/4 h-full rounded-full"
                 alt=""
               />
