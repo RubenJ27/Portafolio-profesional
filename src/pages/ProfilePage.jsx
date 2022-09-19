@@ -28,7 +28,7 @@ export default function ProfilePage() {
                 </p>
                 <button className="flex bg-quinario-color-complement text-white mt-12 w-48 h-10 rounded-3xl items-center justify-center">
                   <img
-                    src="src/assets/icons/download_icon.svg"
+                    src="https://firebasestorage.googleapis.com/v0/b/imagenes-landing-page.appspot.com/o/Landing-Page-Img.png?alt=media&token=efc2b9a7-f14c-41c5-8328-e6f8dd899ee3"
                     className="h-3/5 justify-center self-center mr-3"
                     alt="Instagram"
                   />
