@@ -7,13 +7,13 @@ export default function Experience() {
     <>
       <div className="flex flex-wrap justify-center items-center px-2 py-3 bg-secondary-color flex-end relative" id="experience">
         <h1 className="flex container text-white font-bold text-3xl w-full my-12">
-          Experience
+          Experiencia
         </h1>
         <div className="container flex justify-evenly h-full mb-12">
           <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row justify-between h-2/4">
 
             {/* card */}
-            <div className="flex sm:w-[100%] mb-8 md:mb-8 md:w-[100%] lg:[33%] w-[100%] h-2/5 bg-primary-color lg:w-auto lg:static mr-5 justify-between items center rounded-xl py-7">
+            <div className="flex sm:w-[100%] mb-8 md:mb-8 md:w-[100%] lg:[33%] w-[100%] h-auto bg-primary-color lg:w-auto lg:static mr-5 justify-between items center rounded-xl py-7">
                 {/* card icon */}
               <div className="hidden sm:flex flex-col m-4 mt-6 items-start justify-start self-start">
 
@@ -48,32 +48,32 @@ export default function Experience() {
              {/* card info */} 
              <div className="flex flex-col my-4">
              <div className="bg-secondary-color w-[90%] h-[40%] m-4 p-4 px-10 rounded-xl">
-                <p className="text-white text-start my-3">2019 - Present</p>
+                <p className="text-white text-start my-3">2021 - Presente</p>
                 <h1 className="text-white font-bold text-start my-3 text-3xl">
-                Academic Degree
+                Diplomado front end react
                 </h1>
                 <p className="text-white w-2/3 h-[33%] text-start my-5">
-                Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
+                Diplomado realizado en la Fundación Internacional María Luisa de Moreno especializado en desarrollo fron end con react.
                 </p>
               </div>
               
               <div className="bg-secondary-color w-[90%] h-[40%] m-4 p-4 px-10 rounded-xl">
-                <p className="text-white text-start my-3">2017 - 2013</p>
+                <p className="text-white text-start my-3">2021 - 2022</p>
                 <h1 className="text-white font-bold text-start my-3 text-3xl">
-                Bachelor’s Degree
+                Bootcamp Rio Software
                 </h1>
                 <p className="text-white w-2/3 h-[33%] text-start my-5">
-                Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
+                Bootcamp realizado en la escuela robotica del Choco enfocado en desarrollo web.
                 </p>
               </div>
 
               <div className="bg-secondary-color w-[90%] h-[40%] m-4 p-4 px-10 rounded-xl">
-                <p className="text-white text-start my-3">2013 - 2009</p>
+                <p className="text-white text-start my-3">2020 - 2021</p>
                 <h1 className="text-white font-bold text-start my-3 text-3xl">
-                Honours Degree
+                Desarrollo web con PHP
                 </h1>
                 <p className="text-white w-2/3 h-[33%] text-start my-5">
-                Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
+                Se realizo la formacion certificada en el servicio de aprendizaje sena.
                 </p>
               </div>
 
@@ -82,7 +82,7 @@ export default function Experience() {
             </div>
 
             {/* card */}
-            <div className="flex sm:w-[100%] md:w-[100%] lg:[33%] w-[100%] h-2/5 bg-primary-color lg:w-auto lg:static justify-between items center rounded-xl py-7">
+            <div className="flex sm:w-[100%] mb-8 md:w-[100%] lg:[33%] w-[100%] h-2/5 bg-primary-color lg:w-auto lg:static justify-between items center rounded-xl py-7">
                 {/* card icon */}
               <div className="hidden sm:flex flex-col m-4 mt-6 items-start justify-start self-start">
 
@@ -117,32 +117,32 @@ export default function Experience() {
              {/* card info */} 
              <div className="flex flex-col my-4">
              <div className="bg-secondary-color w-[90%] h-[40%] m-4 p-4 px-10 rounded-xl">
-                <p className="text-white text-start my-3">2019 - Present</p>
+                <p className="text-white text-start my-3">2022 - Presente</p>
                 <h1 className="text-white font-bold text-start my-3 text-3xl">
-                Web Designer
+                Desarrollador freelancer
                 </h1>
                 <p className="text-white w-2/3 h-[33%] text-start my-5">
-                Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
+                Se presta servicio de funcionalidad de software a las empresas e igualmente desarrollo de sitio y plataformas.
                 </p>
               </div>
               
               <div className="bg-secondary-color w-[90%] h-[40%] m-4 p-4 px-10 rounded-xl">
-                <p className="text-white text-start my-3">2017 - 2013</p>
+                <p className="text-white text-start my-3">2021 - 2022</p>
                 <h1 className="text-white font-bold text-start my-3 text-3xl">
                 Front-End Developer
                 </h1>
                 <p className="text-white w-2/3 h-[33%] text-start my-5">
-                Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
+                Se desarrollaron funcionalidades especificas para solucionar las problematicas de una empresa.
                 </p>
               </div>
 
               <div className="bg-secondary-color w-[90%] h-[40%] m-4 p-4 px-10 rounded-xl">
-                <p className="text-white text-start my-3">2013 - 2009</p>
+                <p className="text-white text-start my-3">2020 - 2021</p>
                 <h1 className="text-white font-bold text-start my-3 text-3xl">
-                Back-End Developer
+                Tecnico Auxiliar TIC
                 </h1>
                 <p className="text-white w-2/3 h-[33%] text-start my-5">
-                Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.
+                Encargado de dar soporte tecnologico a toda la empresa en cuanto a los equipos y reparacion ademas requerimientos de software.
                 </p>
               </div>
 

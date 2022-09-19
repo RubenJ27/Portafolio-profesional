@@ -19,7 +19,7 @@ export const PortfolioPage = ({ url, title, description }) => {
                     <img
                       src={project.url}
                       className="h-auto justify-center self-center rounded-lg"
-                      alt="Instagram"
+                      alt="Imagen-portafolio"
                     />
                   </div>
                   <div className="bg-secondary-color w-[50%] sm:w-[40%] rounded-md p-4">

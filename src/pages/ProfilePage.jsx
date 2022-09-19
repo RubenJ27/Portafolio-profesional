@@ -76,46 +76,46 @@ export default function ProfilePage() {
 
         <div className="flex flex-col md:flex-wrap md:flex-row lg:flex-row container justify-between w-full my-9">
           {/* card-1 */}
-          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] md:w-[45%] lg:w-[20%] my-5">
+          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] md:w-[45%] lg:w-[23%] my-5">
             <div className="flex py-8 px-4">
             <FontAwesomeIcon icon={faThumbsUp} className="text-white text-5xl" />
             </div>
             <div className="flex-col m-5">
               <h1 className="text-white font-extrabold text-3xl">19</h1>
-              <p className="text-white mt-2">Projects completed</p>
+              <p className="text-white mt-2">Proyectos completados</p>
             </div>
           </div>
 
           {/* card-2 */}
-          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] md:w-[45%] lg:w-[20%] my-5">
+          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] md:w-[45%] lg:w-[23%] my-5">
             <div className="flex py-8 px-4">
             <FontAwesomeIcon icon={faMugHot} className="text-white text-5xl" />
             </div>
             <div className="flex-col m-5">
               <h1 className="text-white font-extrabold text-3xl">130</h1>
-              <p className="text-white mt-2">Cup of coffee</p>
+              <p className="text-white mt-2">Tazas de cafe</p>
             </div>
           </div>
 
           {/* card-3 */}
-          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] md:w-[45%] lg:w-[20%] my-5">
+          <div className="bg-primary-color flex flex-row rounded-lg w-[100%] md:w-[45%] lg:w-[23%] my-5">
             <div className="flex py-8 px-4">
             <FontAwesomeIcon icon={faUserGroup} className="text-white text-5xl" />
             </div>
             <div className="flex-col m-5">
               <h1 className="text-white font-extrabold text-3xl">130</h1>
-              <p className="text-white mt-2">Satisfied clients</p>
+              <p className="text-white mt-2">Clientes satisfechos</p>
             </div>
           </div>
 
            {/* card-4 */}
-           <div className="bg-primary-color flex flex-row rounded-lg w-[100%] md:w-[45%] lg:w-[20%] my-5">
+           <div className="bg-primary-color flex flex-row rounded-lg w-[100%] md:w-[45%] lg:w-[23%] my-5">
             <div className="flex py-8 px-4">
             <FontAwesomeIcon icon={faAward} className="text-white text-5xl" />
             </div>
             <div className="flex-col m-5">
               <h1 className="text-white font-extrabold text-3xl">11</h1>
-              <p className="text-white mt-2">Honors</p>
+              <p className="text-white mt-2">Honores</p>
             </div>
           </div>
         </div>
