@@ -4,24 +4,27 @@ export default function Footer() {
   return (
     <>
       <footer className="flex flex-wrap items-center justify-center px-2 py-3 bg-primary-color flex-end w-full relative bottom-0">
-        <div className="container flex flex-wrap items-center justify-center">
+        <div className="md:container flex flex-row items-center justify-center">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <p
-              className="text-2xl font-light leading-relaxed inline-block whitespace-nowrap text-white items-center"
+            <div className="flex"> <p
+              className="text-xs md:text-sm lg:text-2xl font-light leading-relaxed inline-block whitespace-nowrap text-white items-center"
             >Ruben Jaramillo Copyright © 2022 todos los derechos reservados. 
-            </p>
+            </p></div>
+           
           </div>
+
           <div
             className={
-              "lg:flex flex-grow items-center"
+              "flex lg:flex w-[50%] flex-grow items-center justify-end"
             }
             id="example-navbar-danger"
           >
             <p
-              className="flex text-xl text-white flex-col lg:flex-row list-none lg:ml-auto justify-items-center justify-self-center items-center"
+              className="hidden sm:hidden md:flex md:text-sm lg:text-2xl text-white flex-col lg:flex-row list-none lg:ml-auto justify-items-center justify-self-center items-center"
             >Creado por <>&nbsp;</>
-            </p><p 
-            className="flex text-2xl font-bold text-secondary-color justify-items-center justify-self-center"
+            </p>
+            <p 
+            className="hidden sm:hidden md:flex  md:text-sm lg:text-2xl font-bold text-secondary-color justify-items-center justify-self-center"
           >Ruben Jaramillo
           </p>
             

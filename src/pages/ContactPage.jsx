@@ -1,11 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBriefcase,
   faEnvelope,
-  faGraduationCap,
-  faHandSparkles,
 } from "@fortawesome/free-solid-svg-icons";
-import { faHand } from "@fortawesome/free-solid-svg-icons";
 import {} from "../App.css";
 
 export default function ContactPage() {
@@ -28,7 +24,7 @@ export default function ContactPage() {
               <p className="text-white">
               ¿No te gustan los formularios? envíame un
                   </p>{" "}
-                  <a className="text-quinario-color-complement cursor-pointer mx-2">
+                  <a className="text-quinario-color-complement cursor-pointer font-medium mx-2">
                     mensaje privado
                   </a>{" "}
                   <FontAwesomeIcon
@@ -46,7 +42,7 @@ export default function ContactPage() {
                 
                 <input type="email" className="bg-secondary-color text-white px-5 py-3 placeholder-white rounded-xl mb-6" name="email" id="email" placeholder="Correo" />
 
-                <textarea id="Message" className="bg-secondary-color text-white px-5 py-3 placeholder-white rounded-xl mb-6" name="Message" placeholder="Mensaje" rows="6"  resize maxLength="3000" required></textarea>
+                <textarea id="Message" className="bg-secondary-color text-white px-5 py-3 placeholder-white rounded-xl mb-6" name="Message" placeholder="Mensaje" rows="6" resize="true" maxLength="3000" required></textarea>
                 
                 <button className="flex justify-center bg-quinario-color-complement text-white w-[60%] sm:w-[35%] md:w-[40%] xl:w-2/4 h-2/3  px-18 rounded-3xl items-center py-2 mr-5">
                 <FontAwesomeIcon

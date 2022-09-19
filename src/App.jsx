@@ -23,7 +23,7 @@ function App() {
     <ExperiencePage />
     <PortfolioPage />
     <ContactPage />
-    {/* <Footer /> */}
+    <Footer />
     </>
   )
 }
