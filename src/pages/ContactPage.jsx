@@ -3,6 +3,7 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import {} from "../App.css";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export default function ContactPage() {
   return (
@@ -24,11 +25,11 @@ export default function ContactPage() {
               <p className="text-white">
               ¿No te gustan los formularios? envíame un
                   </p>{" "}
-                  <a className="text-quinario-color-complement cursor-pointer font-medium mx-2">
+                  <a href="https://api.whatsapp.com/send?phone=573224675055&text=Hola, Nececito mas informacion para realizar proyecto!" className="text-quinario-color-complement cursor-pointer font-medium mx-2">
                     mensaje privado
                   </a>{" "}
                   <FontAwesomeIcon
-                    icon={faEnvelope}
+                    icon={faWhatsapp}
                     className="text-white ml-2 hidden sm:flex text-2xl my-auto"
                   />
               </div>
@@ -37,12 +38,12 @@ export default function ContactPage() {
 
             {/* card */}
             <div className="flex w-[100%] lg:w-auto h-3/4 bg-primary-color lg:static justify-between items center rounded-xl py-7">
-              <form action="" className="flex flex-col w-full h-full px-2.5 sm:px-[3.5rem]">
-                <input type="text" placeholder="Nombre" className="bg-secondary-color w-full xl:w-[25rem] placeholder-white px-5 py-3 rounded-xl mb-6 relative" />
+              <form action="https://formsubmit.co/tiburones.tk@gmail.com" method="POST" className="flex flex-col w-full h-full px-2.5 sm:px-[3.5rem]">
+                <input type="text" name="name" placeholder="Nombre" className="text-white bg-secondary-color w-full xl:w-[25rem] placeholder-white px-5 py-3 rounded-xl mb-6 relative" />
                 
                 <input type="email" className="bg-secondary-color text-white px-5 py-3 placeholder-white rounded-xl mb-6" name="email" id="email" placeholder="Correo" />
 
-                <textarea id="Message" className="bg-secondary-color text-white px-5 py-3 placeholder-white rounded-xl mb-6" name="Message" placeholder="Mensaje" rows="6" resize="true" maxLength="3000" required></textarea>
+                <textarea id="Message" className="bg-secondary-color text-white px-5 py-3 placeholder-white rounded-xl mb-6" name="message" placeholder="Mensaje" rows="6" resize="true" maxLength="3000" required></textarea>
                 
                 <button className="flex justify-center bg-quinario-color-complement text-white w-[60%] sm:w-[35%] md:w-[40%] xl:w-2/4 h-2/3  px-18 rounded-3xl items-center py-2 mr-5">
                 <FontAwesomeIcon

@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHand } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export default function Services() {
   return (
@@ -64,7 +65,7 @@ export default function Services() {
             <div className="order-last hidden sm:flex sm:order-none">
                <p className="text-white">¿Buscas un trabajo personalizado?</p>
             </div>
-            <a className="text-quinario-color-complement cursor-pointer mx-2 font-medium">Click aqui</a> <p className="text-white"> para contactar conmigo. </p><FontAwesomeIcon icon={faHand} className="text-white ml-2 text-2xl my-auto" />
+            <a href="https://api.whatsapp.com/send?phone=573224675055&text=Hola, Nececito mas informacion para realizar proyecto!" className="text-quinario-color-complement cursor-pointer mx-2 font-medium">Click aqui</a> <p className="text-white"> para contactar conmigo. </p><FontAwesomeIcon icon={faWhatsapp} className="text-white ml-2 text-2xl my-auto" />
           </div>
         </div>
 
