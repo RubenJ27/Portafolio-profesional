@@ -12,7 +12,7 @@ export default function Navbar() {
             <a
               className="text-xl font-bold leading-relaxed inline-block whitespace-nowrap uppercase text-white"
               href=""
-            ><img src="JadaLogo.069e4e42.png" alt="Logo-imagen" className="w-14 h-14" />
+            ><img src="./assets/JadaLogo.png" alt="Logo-imagen" className="w-14 h-14" />
             </a>
 
 
