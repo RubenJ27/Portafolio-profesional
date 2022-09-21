@@ -12,6 +12,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
 import { projects } from "./database/projects";
 
+
 function App() {
 /*   const [count, setCount] = useState(0) */
   return (

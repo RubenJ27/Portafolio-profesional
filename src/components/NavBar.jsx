@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { Squash as Hamburger } from 'hamburger-react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAddressCard, faBusinessTime, faFolderOpen, faHouse, faUser, faWrench } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Navbar() {
+
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
@@ -22,7 +26,7 @@ export default function Navbar() {
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <i className="fas fa-bars"></i>
+              <Hamburger />
             </button>
           </div>
           <div
@@ -33,15 +37,18 @@ export default function Navbar() {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <ul className="flex flex-col lg:flex list-none lg:ml-0 lg:flex-col xl:ml-auto xl:flex-row">
               <Link
               offset={-50}
                 smooth
                 spy
                 to="home"
               >
-                <span className="ml-2 mr-4 text-white text-xl cursor-pointer">
-                  Inicio
+                <span className="block py-5 xl:p-0 xl:inline ml-0 xl:ml-2 mr-4 text-white text-xl cursor-pointer">
+                <FontAwesomeIcon
+                  icon={faHouse}
+                  className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
+                /> Inicio
                 </span>
               </Link>
 
@@ -51,8 +58,11 @@ export default function Navbar() {
                 spy
                 to="about-me"
               >
-                <span className="ml-2 mr-4 text-white text-xl cursor-pointer">
-                  Sobre mi
+                <span className="block py-5 xl:p-0 xl:inline ml-0 xl:ml-2 mr-4 text-white text-xl cursor-pointer">
+                <FontAwesomeIcon
+                  icon={faUser}
+                  className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
+                /> Sobre mi
                 </span>
               </Link>
               
@@ -62,8 +72,11 @@ export default function Navbar() {
                 spy
                 to="services"
               >
-                <span className="ml-2 mr-4 text-white text-xl cursor-pointer">
-                  Servicios
+                <span className="block py-5 xl:p-0 xl:inline ml-0 xl:ml-2 mr-4 text-white text-xl cursor-pointer">
+                <FontAwesomeIcon
+                  icon={faWrench}
+                  className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
+                /> Servicios
                 </span>
               </Link>
               <Link
@@ -72,8 +85,11 @@ export default function Navbar() {
                 spy
                 to="experience"
               >
-                <span className="ml-2 mr-4 text-white text-xl cursor-pointer">
-                  Experiencia
+                <span className="block py-5 xl:p-0 xl:inline ml-0 xl:ml-2 mr-4 text-white text-xl cursor-pointer">
+                <FontAwesomeIcon
+                  icon={faBusinessTime}
+                  className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
+                /> Experiencia
                 </span>
               </Link>
               <Link
@@ -82,8 +98,11 @@ export default function Navbar() {
                 spy
                 to="portafolio"
               >
-                <span className="ml-2 mr-4 text-white text-xl cursor-pointer">
-                  Portafolio
+                <span className="block py-5 xl:p-0 xl:inline ml-0 xl:ml-2 mr-4 text-white text-xl cursor-pointer">
+                <FontAwesomeIcon
+                  icon={faFolderOpen}
+                  className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
+                /> Portafolio
                 </span>
               </Link>
               <Link
@@ -92,13 +111,18 @@ export default function Navbar() {
                 spy
                 to="contact"
               >
-                <span className="ml-2 mr-4 text-white text-xl cursor-pointer">
-                  Contacto
+                <span className="block py-5 xl:p-0 xl:inline ml-0 xl:ml-2 mr-4 text-white text-xl cursor-pointer">
+                <FontAwesomeIcon
+                  icon={faAddressCard}
+                  className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
+                /> Contacto
                 </span>
               </Link>
             </ul>
           </div>
         </div>
+
+        
       </nav>
 
       
