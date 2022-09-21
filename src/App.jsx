@@ -2,7 +2,7 @@ import './index.css'
 import Navbar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 import ProfilePage from "./pages/ProfilePage";
-import Services from "./pages/Services";
+import ServicesPage from "./pages/ServicesPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import { PortfolioPage } from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
@@ -19,7 +19,7 @@ function App() {
     <Navbar />
     <HomePage />
     <ProfilePage />
-    <Services />
+    <ServicesPage />
     <ExperiencePage />
     <PortfolioPage />
     <ContactPage />

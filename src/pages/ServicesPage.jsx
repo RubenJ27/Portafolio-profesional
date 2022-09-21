@@ -15,7 +15,7 @@ export default function Services() {
             <div className="flex flex-col mb-8 w-[100%] sm:mb-8 sm:w-[100%] md:mb-0 md:w-[48%] lg:w-[33%] lg:h-auto xl:h-auto h-2/5 bg-secondary-color lg:static lg:block lg:justify-start lg:mr-5 rounded-xl">
               <div className="flex justify-center m-0 p-0">
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/imagenes-landing-page.appspot.com/o/service-web.svg?alt=media&token=35d031de-c252-400b-a5f2-94c7fb5d089f"
+                src="service-web.svg"
                 className="flex my-5"
                 alt="icono web"
               />
@@ -29,7 +29,7 @@ export default function Services() {
            <div className="flex flex-col mb-8 w-[100%] sm:mb-8 sm:w-[100%] md:mb-0 md:w-[49%] lg:w-[33%] lg:h-auto xl:h-auto h-2/5 bg-secondary-color lg:static lg:block lg:justify-start lg:mr-5 rounded-xl">
               <div className="flex justify-center m-0 p-0">
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/imagenes-landing-page.appspot.com/o/service-design.svg?alt=media&token=33ab3e42-3698-4fb5-86d5-89d969ccca3e"
+                src="service-design.svg"
                 className="flex my-5"
                 alt="icono web"
               />
@@ -43,7 +43,7 @@ export default function Services() {
             <div className="flex flex-col w-[100%] sm:w-[100%]  md:w-[100%] lg:w-[33%] h-auto bg-secondary-color lg:static lg:block lg:justify-start rounded-xl md:mt-5 lg:mt-0">
               <div className="flex justify-center m-0 p-0">
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/imagenes-landing-page.appspot.com/o/project_5.svg?alt=media&token=d10c5add-5692-4adf-8e56-cd5b7d043de9"
+                src="project_5.svg"
                 className="flex my-5"
                 alt="icono web"
               />

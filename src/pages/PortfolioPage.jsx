@@ -64,6 +64,7 @@ export const PortfolioPage = ({ url, title, description }) => {
             </div>
           ))}
         </div>
+        
       </div>
     </>
   );

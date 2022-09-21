@@ -13,28 +13,28 @@ export default function ProfilePage() {
             {/* img */}
             <div className="hidden w-full h-full flex-col items-center lg:w-auto lg:static lg:block">
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/imagenes-landing-page.appspot.com/o/AvatarMaker-6.png?alt=media&token=20307d50-76bb-454e-b808-90fdab9df2e4"
+                src="AvatarMaker-2.png"
                 className="flex w-2/4 h-full rounded-full"
                 alt=""
               />
             </div>
 
-            {/* group skills */}
-
+      
             <div className="bg-primary-color flex-col md:flex-row lg:flex-row lg:flex flex-grow justify-between items-center w-[100%] lg:w-3/4 h-2/4 p-10 py-10 flex rounded-md">
               <div className="flex flex-col justify-center w-[100%] mb-10 md:w-2/5 lg:w-2/5">
                 <p className="flex flex-col text-xl text-white justify-center self-center items-center lg:flex-row lg:ml-auto">       
-                  Soy un desarrollador web y me especializo en Front-end, también me encanta realizar proyectos de tecnología, hoteles, etc.
+                  Soy un desarrollador web y me especializo en front end, también me encanta realizar proyectos de tecnología para tu empresa o idea de negocios.
                 </p>
                 <button className="flex bg-quinario-color-complement text-white mt-12 w-48 h-10 rounded-3xl items-center justify-center">
                   <img
-                    src="https://firebasestorage.googleapis.com/v0/b/imagenes-landing-page.appspot.com/o/download_icon.svg?alt=media&token=0203c4c2-f5ff-4d53-a386-19dfb9b554c2"
+                    src="download_icon.svg"
                     className="h-3/5 justify-center self-center mr-3"
-                    alt="Instagram"
+                    alt="Descargar"
                   />
                   Descargar CV
                 </button>
               </div>
+              {/* group skills */}
 
               <div className="flex flex-col bg-secondary-color w-[100%] md:w-2/5 lg:w-2/5 rounded-md p-4">
                 {/* skill-1 */}

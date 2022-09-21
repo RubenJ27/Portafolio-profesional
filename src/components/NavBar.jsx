@@ -12,8 +12,9 @@ export default function Navbar() {
             <a
               className="text-xl font-bold leading-relaxed inline-block whitespace-nowrap uppercase text-white"
               href=""
-            ><img src="https://firebasestorage.googleapis.com/v0/b/imagenes-landing-page.appspot.com/o/JadaLogo.png?alt=media&token=6fc087f4-e28d-4230-8928-a6052598a8c3" alt="Logo-imagen" className="w-14 h-14" />
+            ><img src="JadaLogo.069e4e42.png" alt="Logo-imagen" className="w-14 h-14" />
             </a>
+
 
             {/* menu-responsive */}
             <button

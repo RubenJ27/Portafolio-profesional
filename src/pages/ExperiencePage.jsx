@@ -63,7 +63,7 @@ export default function Experience() {
                 Bootcamp Rio Software
                 </h1>
                 <p className="text-white w-2/3 h-[33%] text-start my-5">
-                Bootcamp realizado en la escuela robotica del Choco enfocado en desarrollo web.
+                Bootcamp realizado en la escuela de robotica del Choco enfocado en desarrollo web.
                 </p>
               </div>
 
