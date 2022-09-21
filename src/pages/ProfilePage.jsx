@@ -25,14 +25,14 @@ export default function ProfilePage() {
                 <p className="flex flex-col text-xl text-white justify-center self-center items-center lg:flex-row lg:ml-auto">       
                   Soy un desarrollador web y me especializo en front end, también me encanta realizar proyectos de tecnología para tu empresa o idea de negocios.
                 </p>
-                <button className="flex bg-quinario-color-complement text-white mt-12 w-48 h-10 rounded-3xl items-center justify-center">
+                <a href="CV-FRONT-END-RUBEN-JARA.pdf" download="CV-Ruben-J" className="flex bg-quinario-color-complement text-white mt-12 w-48 h-10 rounded-3xl items-center justify-center">
                   <img
                     src="download_icon.svg"
                     className="h-3/5 justify-center self-center mr-3"
                     alt="Descargar"
                   />
                   Descargar CV
-                </button>
+                </a>
               </div>
               {/* group skills */}
 
