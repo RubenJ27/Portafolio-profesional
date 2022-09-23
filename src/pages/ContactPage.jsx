@@ -14,12 +14,14 @@ export default function ContactPage() {
     formState: { errors },
     handleSubmit,
   } = useForm();
-  const patterns = {
-    name: /^[A-Za-z]+$/i,
-    email: /^[a-z0-9][-a-z0-9._]+@([-a-z0-9]+\.)+[a-z]{2,5}$/,
-  };
+  
 
-  const onSubmit = (userInfo) => console.log(userInfo);
+  const onSubmit = (userInfo) => {
+    userInfo
+    formContact.submit();/* Para enviar un formulario al servidor manualmente, podemos usar form.submit().
+
+    Entonces el evento submit no será generado. Se asume que si el programador llama form.submit(), entonces el script ya realizó todo el procesamiento relacionado. */
+  };
 
   return (
     <>
@@ -60,7 +62,10 @@ export default function ContactPage() {
             <div className="flex w-[100%] lg:w-auto h-3/4 bg-primary-color lg:static justify-between items center rounded-xl py-7">
               <form
                 onSubmit={handleSubmit(onSubmit)}
-                action="https://formsubmit.co/tiburones.tk@gmail.com" method="POST" className="flex flex-col w-full h-full px-2.5 sm:px-[3.5rem]"
+                action="https://formsubmit.co/tiburones.tk@gmail.com"
+                method="POST"
+                id="formContact"
+                className="flex flex-col w-full h-full px-2.5 sm:px-[3.5rem]"
               >
                 <div className="mb-6">
                   <input
@@ -178,7 +183,7 @@ export default function ContactPage() {
                   )}
                 </div>
 
-                <button className="flex justify-center bg-quinario-color-complement text-white w-[60%] sm:w-[35%] md:w-[40%] xl:w-2/4 h-2/3  px-18 rounded-3xl items-center py-2 mr-5">
+                <button type="submit" className="flex justify-center bg-quinario-color-complement text-white w-[60%] sm:w-[35%] md:w-[40%] xl:w-2/4 h-2/3  px-18 rounded-3xl items-center py-2 mr-5">
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     className="text-white ml-2 text-2xl my-auto mr-3"
