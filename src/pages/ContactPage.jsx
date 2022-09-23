@@ -60,7 +60,7 @@ export default function ContactPage() {
             <div className="flex w-[100%] lg:w-auto h-3/4 bg-primary-color lg:static justify-between items center rounded-xl py-7">
               <form
                 onSubmit={handleSubmit(onSubmit)}
-                /* action="https://formsubmit.co/tiburones.tk@gmail.com" method="POST" */ className="flex flex-col w-full h-full px-2.5 sm:px-[3.5rem]"
+                action="https://formsubmit.co/tiburones.tk@gmail.com" method="POST" className="flex flex-col w-full h-full px-2.5 sm:px-[3.5rem]"
               >
                 <div className="mb-6">
                   <input
