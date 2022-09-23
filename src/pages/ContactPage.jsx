@@ -1,23 +1,25 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faTriangleExclamation,
+} from "@fortawesome/free-solid-svg-icons";
 import {} from "../App.css";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 export default function ContactPage() {
- 
-  const { register, formState: { errors } ,handleSubmit } = useForm();
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
   const patterns = {
     name: /^[A-Za-z]+$/i,
     email: /^[a-z0-9][-a-z0-9._]+@([-a-z0-9]+\.)+[a-z]{2,5}$/,
   };
 
-  
   const onSubmit = (userInfo) => console.log(userInfo);
-
-  
-  
 
   return (
     <>
@@ -61,74 +63,120 @@ export default function ContactPage() {
                 /* action="https://formsubmit.co/tiburones.tk@gmail.com" method="POST" */ className="flex flex-col w-full h-full px-2.5 sm:px-[3.5rem]"
               >
                 <div className="mb-6">
-                <input
-                  {...register("name", {
-                    required: true,
-                    minLength: 3,
-                    pattern: /^[a-zA-Z ]+$/
-                  })}
-                  name="name"
-                  type="text"
-                  placeholder="Nombre"
-                  className="text-white bg-secondary-color w-full xl:w-[25rem] placeholder-white px-5 py-3 rounded-xl relative"
-                />
+                  <input
+                    {...register("name", {
+                      required: true,
+                      minLength: 3,
+                      pattern: /^[a-zA-Z ]+$/,
+                    })}
+                    name="name"
+                    type="text"
+                    placeholder="Nombre"
+                    className="text-white bg-secondary-color w-full xl:w-[25rem] placeholder-white px-5 py-3 rounded-xl relative"
+                  />
 
-                {errors.name?.type === 'required' && <p className="text-red-600 font-bold ml-1 mt-2"> <FontAwesomeIcon
-                    icon={faTriangleExclamation}
-                    className="text-red-600 ml-1 pt-1 text-2xl my-auto mr-3"
-                  />El campo nombre es requerido </p>}
-                {errors.name?.type === 'minLength' && <p className="text-red-600 font-bold ml-1 mt-2"> <FontAwesomeIcon
-                    icon={faTriangleExclamation}
-                    className="text-red-600 pt-1 text-2xl mr-2"
-                  />El campo debe tener como minimo 3 caracteres </p>}
-                   {errors.name?.type === 'pattern' && <p className="text-red-600 font-bold ml-1 mt-2"> <FontAwesomeIcon
-                    icon={faTriangleExclamation}
-                    className="text-red-600 pt-1 text-2xl mr-2"
-                  />No se admiten caracteres especiales en este campo </p>}
-                  
+                  {errors.name?.type === "required" && (
+                    <p className="text-red-600 font-bold ml-1 mt-2">
+                      {" "}
+                      <FontAwesomeIcon
+                        icon={faTriangleExclamation}
+                        className="text-red-600 ml-1 pt-1 text-2xl my-auto mr-3"
+                      />
+                      El campo nombre es requerido{" "}
+                    </p>
+                  )}
+                  {errors.name?.type === "minLength" && (
+                    <p className="text-red-600 font-bold ml-1 mt-2">
+                      {" "}
+                      <FontAwesomeIcon
+                        icon={faTriangleExclamation}
+                        className="text-red-600 pt-1 text-2xl mr-2"
+                      />
+                      El campo debe tener como minimo 3 caracteres{" "}
+                    </p>
+                  )}
+                  {errors.name?.type === "pattern" && (
+                    <p className="text-red-600 font-bold ml-1 mt-2">
+                      {" "}
+                      <FontAwesomeIcon
+                        icon={faTriangleExclamation}
+                        className="text-red-600 pt-1 text-2xl mr-2"
+                      />
+                      No se admiten caracteres especiales en este campo{" "}
+                    </p>
+                  )}
                 </div>
-                
+
                 <div className="mb-6">
-                <input
-                 {...register("email", {
-                  required: true,
-                  pattern: /^[a-z0-9][-a-z0-9._]+@([-a-z0-9]+\.)+[a-z]{2,5}$/
-                })}
-                  type="email"
-                  name="email"
-                  className="bg-secondary-color text-white px-5 py-3 placeholder-white rounded-xl w-full "
-                  placeholder="Correo"
-                />
+                  <input
+                    {...register("email", {
+                      required: true,
+                      pattern:
+                        /^[a-z0-9][-a-z0-9._]+@([-a-z0-9]+\.)+[a-z]{2,5}$/,
+                    })}
+                    type="email"
+                    name="email"
+                    className="bg-secondary-color text-white px-5 py-3 placeholder-white rounded-xl w-full "
+                    placeholder="Correo"
+                  />
 
-                {errors.email?.type === 'pattern' && <p className="text-red-600 font-bold ml-1 mt-2"><FontAwesomeIcon
-                    icon={faTriangleExclamation}
-                    className="text-red-600 ml-1 pt-1 text-2xl my-auto mr-3"
-                  />Introduzca una direccion de correo valida</p>}
+                  {errors.email?.type === "required" && (
+                    <p className="text-red-600 font-bold ml-1 mt-2">
+                      {" "}
+                      <FontAwesomeIcon
+                        icon={faTriangleExclamation}
+                        className="text-red-600 ml-1 pt-1 text-2xl my-auto mr-3"
+                      />
+                      El campo correo es requerido{" "}
+                    </p>
+                  )}
+
+                  {errors.email?.type === "pattern" && (
+                    <p className="text-red-600 font-bold ml-1 mt-2">
+                      <FontAwesomeIcon
+                        icon={faTriangleExclamation}
+                        className="text-red-600 ml-1 pt-1 text-2xl my-auto mr-3"
+                      />
+                      Introduzca una direccion de correo valida
+                    </p>
+                  )}
                 </div>
-                
+
                 <div className="mb-6">
-                <textarea
-                {...register("message", {
-                  required: true,
-                  minLength: 10
-                })}
+                  <textarea
+                    {...register("message", {
+                      required: true,
+                      minLength: 10,
+                    })}
+                    className="bg-secondary-color text-white px-5 py-3 placeholder-white rounded-xl w-full"
+                    name="message"
+                    placeholder="Mensaje"
+                    rows="6"
+                    resize="true"
+                    maxLength="3000"
+                  ></textarea>
 
-                  className="bg-secondary-color text-white px-5 py-3 placeholder-white rounded-xl w-full"
-                  name="message"
-                  placeholder="Mensaje"
-                  rows="6"
-                  resize="true"
-                  maxLength="3000"
-                ></textarea>
-
-                {errors.message?.type === 'minLength' && <p className="text-red-600 font-bold ml-1 mt-2"> <FontAwesomeIcon
-                    icon={faTriangleExclamation}
-                    className="text-red-600 pt-1 text-2xl mr-2"
-                  />El campo debe tener como minimo 10 caracteres </p>}
+                  {errors.message?.type === "required" && (
+                    <p className="text-red-600 font-bold ml-1 mt-2">
+                      {" "}
+                      <FontAwesomeIcon
+                        icon={faTriangleExclamation}
+                        className="text-red-600 ml-1 pt-1 text-2xl my-auto mr-3"
+                      />
+                      El campo mensaje es requerido{" "}
+                    </p>
+                  )}
+                  {errors.message?.type === "minLength" && (
+                    <p className="text-red-600 font-bold ml-1 mt-2">
+                      {" "}
+                      <FontAwesomeIcon
+                        icon={faTriangleExclamation}
+                        className="text-red-600 pt-1 text-2xl mr-2"
+                      />
+                      El campo debe tener como minimo 10 caracteres{" "}
+                    </p>
+                  )}
                 </div>
-                
-
-                
 
                 <button className="flex justify-center bg-quinario-color-complement text-white w-[60%] sm:w-[35%] md:w-[40%] xl:w-2/4 h-2/3  px-18 rounded-3xl items-center py-2 mr-5">
                   <FontAwesomeIcon
