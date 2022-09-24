@@ -63,7 +63,7 @@ export default function Experience() {
                 Bootcamp Rio Software
                 </h1>
                 <p className="text-white w-2/3 h-[33%] text-start my-5">
-                Bootcamp realizado en la escuela de robotica del Choco enfocado en desarrollo web.
+                Bootcamp realizado en la escuela de robótica del Chocó enfocado en desarrollo web.
                 </p>
               </div>
 
@@ -73,7 +73,7 @@ export default function Experience() {
                 Desarrollo web con PHP
                 </h1>
                 <p className="text-white w-2/3 h-[33%] text-start my-5">
-                Se realizo la formacion certificada en el servicio de aprendizaje sena.
+                Se realizó la formación certificada en el servicio de aprendizaje sena.
                 </p>
               </div>
 
@@ -132,17 +132,17 @@ export default function Experience() {
                 Front-End Developer
                 </h1>
                 <p className="text-white w-2/3 h-[33%] text-start my-5">
-                Se desarrollaron funcionalidades especificas para solucionar las problematicas de una empresa.
+                Se desarrollaron funcionalidades específicas para solucionar las problemáticas de una empresa.
                 </p>
               </div>
 
               <div className="bg-secondary-color w-[90%] h-[40%] m-4 p-4 px-10 rounded-xl">
                 <p className="text-white text-start my-3">2020 - 2021</p>
                 <h1 className="text-white font-bold text-start my-3 text-3xl">
-                Tecnico Auxiliar TIC
+                Técnico Auxiliar TIC
                 </h1>
                 <p className="text-white w-2/3 h-[33%] text-start my-5">
-                Encargado de dar soporte tecnologico a toda la empresa en cuanto a los equipos y reparacion ademas requerimientos de software.
+                Encargado de dar soporte tecnológico a toda la empresa en cuanto a los equipos y reparación además requerimientos de software.
                 </p>
               </div>
 

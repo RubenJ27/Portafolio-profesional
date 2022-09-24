@@ -23,7 +23,7 @@ export default function Services() {
               </div>
               
               <h1 className="text-white font-bold text-center my-3 text-3xl">Desarrollo web</h1>
-              <p className="text-white w-2/3 text-center my-5 mx-auto">Se ofrece servicios de desarrollo de funciones expecificas, ademas de soluciones para solventar los problemas en tu empresa y mejorar las procesos.</p>
+              <p className="text-white w-2/3 text-center my-5 mx-auto">Se ofrece servicios de desarrollo de funciones específicas además de soluciones para solventar los problemas en tu empresa y mejorar los procesos.</p>
             </div>
 
            {/* card */}
@@ -50,8 +50,8 @@ export default function Services() {
               />
               </div>
               
-              <h1 className="text-white font-bold text-center my-3 text-3xl">Gestion de proyectos</h1>
-              <p className="text-white w-2/3 text-center my-5 mx-auto">En cuanto a gestion de proyectos se ofrece claridad en todo el tema de planificacion de como se abordara y resolvera el problema o mejora.</p>
+              <h1 className="text-white font-bold text-center my-3 text-3xl">Gestión de proyectos</h1>
+              <p className="text-white w-2/3 text-center my-5 mx-auto">En cuanto a gestión de proyectos se ofrece claridad en todo el tema de planificación de como se abordará y resolvera el problema o mejora.</p>
             </div>
 
             
