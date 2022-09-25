@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import {  } from "../App.css";
 
 export default function Experience() {
   return (
@@ -22,7 +21,7 @@ export default function Experience() {
                   icon={faGraduationCap}
                   className="text-white items-start justify-start ml-2 text-2xl my-auto"
                 />
-                  <span id="line" className="flex w-full justify-center self-center mx-auto"></span>
+                  <span id="line" className="flex relative flex-col items-center w-[2px] h-[12rem] top-[10px] bottom-[10px] bg-white  justify-center self-center mx-auto"></span>
 
                 </div>
 
@@ -31,7 +30,7 @@ export default function Experience() {
                   icon={faGraduationCap}
                   className="text-white items-start justify-start ml-2 mb-2 text-2xl my-auto"
                 />
-                  <span id="line" className="flex w-full justify-center self-center mx-auto"></span>
+                  <span id="line" className="flex relative flex-col items-center w-[2px] h-[12rem] top-[10px] bottom-[10px] bg-white  justify-center self-center mx-auto"></span>
 
                 </div>
 
@@ -40,7 +39,7 @@ export default function Experience() {
                   icon={faGraduationCap}
                   className="text-white items-start justify-start ml-2 mb-2 text-2xl my-auto"
                 />
-                  <span id="line" className="flex w-full justify-center self-center mx-auto"></span>
+                 <span id="line" className="flex relative flex-col items-center w-[2px] h-[12rem] top-[10px] bottom-[10px] bg-white  justify-center self-center mx-auto"></span>
 
                 </div>
                 
@@ -91,7 +90,8 @@ export default function Experience() {
                   icon={faBriefcase}
                   className="text-white items-start justify-start ml-2 text-2xl my-auto"
                 />
-                  <span id="line" className="flex w-full justify-center self-center mx-auto"></span>
+                
+                  <span id="line" className="flex relative flex-col items-center w-[2px] h-[12rem] top-[10px] bottom-[10px] bg-white  justify-center self-center mx-auto"></span>
 
                 </div>
 
@@ -100,7 +100,7 @@ export default function Experience() {
                   icon={faBriefcase}
                   className="text-white items-start justify-start ml-2 mb-2 text-2xl my-auto"
                 />
-                  <span id="line" className="flex w-full justify-center self-center mx-auto"></span>
+                  <span id="line" className="flex relative flex-col items-center w-[2px] h-[12rem] top-[10px] bottom-[10px] bg-white  justify-center self-center mx-auto"></span>
 
                 </div>
 
@@ -109,7 +109,7 @@ export default function Experience() {
                   icon={faBriefcase}
                   className="text-white items-start justify-start ml-2 mb-2 text-2xl my-auto"
                 />
-                  <span id="line" className="flex w-full justify-center self-center mx-auto"></span>
+                  <span id="line" className="flex relative flex-col items-center w-[2px] h-[13rem] top-[10px] bottom-[10px] bg-white  justify-center self-center mx-auto"></span>
 
                 </div>
                 
@@ -142,7 +142,7 @@ export default function Experience() {
                 Técnico Auxiliar TIC
                 </h1>
                 <p className="text-white w-2/3 h-[33%] text-start my-5">
-                Encargado de dar soporte tecnológico a toda la empresa en cuanto a los equipos y reparación además requerimientos de software.
+                Encargado de dar soporte tecnológico a toda la empresa en cuanto a los equipos y su reparación además resolver requerimientos de software.
                 </p>
               </div>
 

@@ -3,7 +3,6 @@ import {
   faEnvelope,
   faTriangleExclamation,
 } from "@fortawesome/free-solid-svg-icons";
-import {} from "../App.css";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 import { useForm } from "react-hook-form";

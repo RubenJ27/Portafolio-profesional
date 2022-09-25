@@ -2,6 +2,7 @@
 const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ["./index.html", "./src/**/*.jsx"],
+  important: true,
   theme: {
     extend: {
       colors: {
@@ -15,6 +16,10 @@ module.exports = {
       'yellow-progress': '#FFD15C',
       'red-progress': '#FF4C60',
       'projects-management-progress': '#6C6CE5',
+    },
+    screens: {
+      'tall': { 'raw': '(max-width: 420px)' },
+      // => @media (min-height: 800px) { ... }
     },
     height: {
       '128': '75vh',

@@ -13,7 +13,7 @@ export const PortfolioPage = ({ url, title, description }) => {
         {/* row */}
         <div className="container grid gap-4 grid-cols-1 lg:grid-cols-2 grid-rows-2 justify-between w-full h-full mb-24">
           {projects.map((project) => (
-            <div key={project.id} className="flex container justify-between flex-col bg-secondary-color lg:flex flex-grow items-center w-[100%] h-[100%] px-5 py-5 rounded-md mr-5 my-10">
+            <div key={project.id} className="flex container justify-between flex-col bg-secondary-color lg:flex flex-grow items-center w-[100%] h-[100%] px-5 py-5 rounded-md sm:mr-5 sm:my-10">
                 <div className="flex flex-row w-full h-full justify-around">
                   <div className="flex flex-col justify-center w-[50%] h-[80%]">
                     <img
