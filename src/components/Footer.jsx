@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="md:container flex flex-row items-center justify-center">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <div className="flex"> <p
-              className="tall:text-[2.1vh] text-[2.7vh] sm:text-sm md:text-sm lg:text-2xl font-light leading-relaxed inline-block whitespace-nowrap text-white items-center"
+              className="tall:text-[1.9vh] text-[2.7vh] sm:text-sm md:text-sm lg:text-2xl font-light leading-relaxed inline-block whitespace-nowrap text-white items-center"
             >Ruben Jaramillo Copyright © 2022 todos los derechos reservados. 
             </p></div>
            
