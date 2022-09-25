@@ -37,7 +37,7 @@ export default function Navbar() {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col lg:flex lg:w-full list-none lg:ml-0 lg:flex-col xl:ml-auto xl:flex-row xl:w-auto">
+            <ul className="flex w-full flex-col lg:flex lg:w-full list-none lg:ml-0 lg:flex-col xl:ml-auto xl:flex-row xl:w-auto">
               <Link
               offset={-50}
                 smooth
