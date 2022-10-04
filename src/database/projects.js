@@ -16,8 +16,10 @@ export const projects = [
   {
     id: 3,
     title: 'API de super heroes',
-    description: 'Esta sección está en su etapa de construcción',
-    url: 'Pagina-en-construccion.jpg'
+    description: 'Aquí está el link directo que incluye el despliegue de la aplicaión de super heroes',
+    url: 'Api-heroes-img.png',
+    url_github: 'https://github.com/RubenJ27/Api-superheroes',
+    url_live: 'https://api-heroes.netlify.app/'
   },
   {
     id: 4,
