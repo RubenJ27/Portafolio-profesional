@@ -2,4 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+.animate__animated.animate__fadeInLeftBig {
+  --animate-duration: 0.5s;
+}
+
 

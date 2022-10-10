@@ -33,7 +33,7 @@ export default function Navbar() {
           
             className={
               "xl:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
+              (navbarOpen ? " animate__animated animate__fadeInLeftBig flex" : " hidden")
             }
             id="example-navbar-danger"
           >

@@ -10,8 +10,10 @@ export const projects = [
   {
     id: 2,
     title: 'API del clima',
-    description: 'Esta sección está en su etapa de construcción',
-    url: 'Pagina-en-construccion.jpg'
+    description: 'Aquí está el link directo que incluye el despliegue de la aplicaión del clima',
+    url: 'App-clima-ts.PNG',
+    url_github: 'https://github.com/RubenJ27/App-clima-typescript',
+    url_live: 'https://app-clima-ts.netlify.app/'
   },
   {
     id: 3,

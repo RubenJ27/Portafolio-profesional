@@ -23,7 +23,7 @@ function App() {
                         icon={faArrowUp}
                         className="text-white text-3xl"
                       />}
-    className='flex right-[20px] bottom-[15px] justify-center items-center w-[4rem] h-[4rem] rounded-full  bg-quinario-color-complement' />
+    className='flex right-[20px] bottom-[15px] justify-center items-center w-[4rem] h-[4rem] rounded-full  bg-quinario-color-complement hover:bg-orange-700' />
     <Navbar />
     <HomePage />
     <ProfilePage />
