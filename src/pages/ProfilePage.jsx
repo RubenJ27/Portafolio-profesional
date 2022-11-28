@@ -40,8 +40,8 @@ export default function ProfilePage() {
                 {/* skill-1 */}
                 <div className="w-full mb-8">
                   <div className="flex justify-between mb-2">
-                    <h1 className="text-white">Desarrollo</h1>{" "}
-                    <h1 className="text-white">85%</h1>
+                    <h1 className="text-white">Desarrollo web</h1>{" "}
+                   {/*  <h1 className="text-white">85%</h1> */}
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                     <div className="bg-yellow-progress h-2.5 rounded-full w-[85%]"></div>
@@ -51,7 +51,7 @@ export default function ProfilePage() {
                 <div className="w-full mb-8">
                   <div className="flex justify-between mb-2">
                     <h1 className="text-white">Diseño web</h1>{" "}
-                    <h1 className="text-white">80%</h1>
+                    {/* <h1 className="text-white">80%</h1> */}
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                     <div className="bg-red-progress h-2.5 rounded-full w-4/5"></div>
@@ -61,7 +61,7 @@ export default function ProfilePage() {
                 <div className="w-full mb-3">
                   <div className="flex justify-between mb-2">
                     <h1 className="text-white">Gestion de proyectos</h1>{" "}
-                    <h1 className="text-white">70%</h1>
+                    {/* <h1 className="text-white">70%</h1> */}
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                     <div className="bg-projects-management-progress h-2.5 rounded-full w-[70%]"></div>
