@@ -1,11 +1,20 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { useInView } from 'react-intersection-observer'
 import { Squash as Hamburger } from 'hamburger-react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faBusinessTime, faFolderOpen, faHouse, faUser, faWrench } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Navbar() {
+  
+  const { ref, inView} = useInView({
+    threshold: 1,
+    trackVisibility: true,
+    delay: 100,
+    rootMargin: "0px 0px 0px 0px"
+    
+    });
 
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
@@ -43,6 +52,7 @@ export default function Navbar() {
                 smooth
                 spy
                 to="home"
+                className={inView ? '.active' : ''}
               >
                 <span className="block pr-0 py-5 xl:p-5 xl:inline ml-0 text-white text-xl cursor-pointer hover:bg-secondary-color rounded-sm">
                 <FontAwesomeIcon
@@ -72,7 +82,7 @@ export default function Navbar() {
                 spy
                 to="services"
               >
-                <span className="block py-5 xl:p-5 xl:inline ml-0 xl:ml-2 mr-4 text-white text-xl cursor-pointer hover:bg-secondary-color">
+                <span className="block pr-0 py-5 xl:p-5 xl:inline ml-0 text-white text-xl cursor-pointer hover:bg-secondary-color rounded-sm">
                 <FontAwesomeIcon
                   icon={faWrench}
                   className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
