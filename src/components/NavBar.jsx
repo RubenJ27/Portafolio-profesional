@@ -52,7 +52,7 @@ export default function Navbar() {
                 smooth
                 spy
                 to="home"
-                className={inView ? '.active' : ''}
+                className={inView ? 'active' : ''}
               >
                 <span className="block pr-0 py-5 xl:p-5 xl:inline ml-0 text-white text-xl cursor-pointer hover:bg-secondary-color rounded-sm">
                 <FontAwesomeIcon
