@@ -6,11 +6,5 @@
   --animate-duration: 0.5s;
 }
 
-.active{
-  padding-bottom: 0.7rem;
-  border-bottom: 6px solid #006366;
-  display: inline;
-  text-underline-offset: 9px;
-}
 
 

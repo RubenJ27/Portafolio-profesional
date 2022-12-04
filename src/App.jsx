@@ -1,4 +1,3 @@
-import './index.css'
 import ScrollToTop from "react-scroll-to-top";
 import Navbar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
@@ -14,6 +13,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
 import { projects } from "./database/projects";
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import './index.css'
 
 
 function App() {
