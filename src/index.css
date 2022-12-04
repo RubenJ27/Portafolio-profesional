@@ -1,12 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .animate__animated.animate__fadeInLeftBig {
   --animate-duration: 0.5s;
-};
+}
 
-.active{
+.active {
   padding-bottom: 0.7rem;
   border-bottom: 6px solid #006366;
   display: inline;

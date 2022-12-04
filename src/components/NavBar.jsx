@@ -9,12 +9,13 @@ import { faAddressCard, faBusinessTime, faFolderOpen, faHouse, faUser, faWrench 
 export default function Navbar() {
   
   const { ref, inView} = useInView({
-    threshold: 1,
+    threshold: 0.15,
     trackVisibility: true,
     delay: 100,
-    rootMargin: "0px 0px 0px 0px"
+    rootMargin: "-150px 0px 0px 0px"
     
-    });
+    })
+
 
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
@@ -46,13 +47,13 @@ export default function Navbar() {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex w-full flex-col lg:flex lg:w-full list-none lg:ml-0 lg:flex-col xl:ml-auto xl:flex-row xl:w-auto">
+            <ul className="flex w-full flex-col lg:flex lg:w-full list-none lg:ml-0 lg:flex-col xl:ml-auto xl:flex-row xl:w-auto" ref={ref}>
               <Link
               offset={-50}
                 smooth
                 spy
                 to="home"
-                className={inView ? 'active' : ''}
+                className={inView ? '✅' : '❌'}
               >
                 <span className="block pr-0 py-5 xl:p-5 xl:inline ml-0 text-white text-xl cursor-pointer hover:bg-secondary-color rounded-sm">
                 <FontAwesomeIcon
@@ -121,7 +122,7 @@ export default function Navbar() {
                 spy
                 to="contact"
               >
-                <span className="block pr-0 py-5 xl:p-5 xl:inline ml-0 text-white text-xl cursor-pointer hover:bg-secondary-color active:bg-primary-color  rounded-sm">
+                <span className="block pr-0 py-5 xl:p-5 xl:inline ml-0 text-white text-xl cursor-pointer hover:bg-secondary-color rounded-sm">
                 <FontAwesomeIcon
                   icon={faAddressCard}
                   className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
