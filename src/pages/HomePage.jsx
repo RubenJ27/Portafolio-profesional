@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 export default function HomePage() {
   return (
     <>
-      <div className="bg-primary-color flex bg-[url('beautiful-geometric.png')] relative z-10 w-full justify-center" id="home">
+      <div className="bg-primary-color flex bg-[url('src/assets/profile/beautiful-geometric.png')] relative z-10 w-full justify-center" id="home">
         <div className="flex flex-col justify-start mt-6 z-30">
           <img src="AvatarMaker-2.png" className="flex w-5/4 h-2/4 rounded-full mt-2 self-center" alt="" />
           <h1 className="flex text-white text-4xl font-bold justify-center my-2">Ruben Jaramillo</h1>
