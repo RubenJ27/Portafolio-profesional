@@ -45,7 +45,7 @@ export default function ContactPage() {
                   ¿No te gustan los formularios? envíame un
                 </p>{" "}
                 <a
-                  href="https://api.whatsapp.com/send?phone=573224675055&text=Hola, Nececito mas informacion para realizar proyecto!"
+                  href="https://api.whatsapp.com/send?phone=573224675055&text=Hola, Necesito mas informacion para realizar proyecto!"
                   className="text-quinario-color-complement cursor-pointer font-medium mx-2"
                 >
                   mensaje privado
