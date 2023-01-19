@@ -1,23 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
-import { useInView } from 'react-intersection-observer'
-import { Squash as Hamburger } from 'hamburger-react'
+import { useInView } from "react-intersection-observer";
+import { Squash as Hamburger } from "hamburger-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAddressCard, faBusinessTime, faFolderOpen, faHouse, faUser, faWrench } from "@fortawesome/free-solid-svg-icons";
-
+import {
+  faAddressCard,
+  faBusinessTime,
+  faFolderOpen,
+  faHouse,
+  faUser,
+  faWrench,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
-  
-  const { ref, inView} = useInView({
+  const { ref, inView } = useInView({
     threshold: 0.15,
     trackVisibility: true,
     delay: 100,
-    rootMargin: "-150px 0px 0px 0px"
-    
-    })
-
+    rootMargin: "-150px 0px 0px 0px",
+  });
 
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [isOpen, setOpen] = useState(false);
+  let windowWidth = window.innerWidth
+
+  window.onresize = function(){
+
+    windowWidth = window.innerWidth;
+    console.log(windowWidth)
+   };
+   const closeNav = () => {
+    setNavbarOpen(!navbarOpen);
+  }
+  
   return (
     <>
       <nav className="flex flex-wrap items-center justify-center px-2 py-3 bg-primary-color sticky top-0 w-full z-50">
@@ -26,9 +41,9 @@ export default function Navbar() {
             <a
               className="text-xl font-bold leading-relaxed inline-block whitespace-nowrap uppercase text-white"
               href=""
-            ><img src="JadaLogo.png" alt="Logo-imagen" className="w-14 h-14" />
+            >
+              <img src="JadaLogo.png" alt="Logo-imagen" className="w-14 h-14" />
             </a>
-
 
             {/* menu-responsive */}
             <button
@@ -36,109 +51,149 @@ export default function Navbar() {
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <Hamburger />
+              <Hamburger toggled={isOpen} toggle={setOpen} />
             </button>
           </div>
           <div
-          
             className={
               "xl:flex flex-grow items-center" +
-              (navbarOpen ? " animate__animated animate__fadeInLeftBig flex" : " hidden")
+              (navbarOpen
+                ? " animate__animated animate__fadeInLeftBig flex"
+                : " hidden")
             }
             id="example-navbar-danger"
           >
-            <ul className="flex w-full flex-col lg:flex lg:w-full list-none lg:ml-0 lg:flex-col xl:ml-auto xl:flex-row xl:w-auto" ref={ref}>
+            <ul
+              className="flex w-full flex-col lg:flex lg:w-full list-none lg:ml-0 lg:flex-col xl:ml-auto xl:flex-row xl:w-auto"
+              ref={ref}
+            >
               <Link
-              offset={-50}
+                offset={-50}
                 smooth
                 spy
                 to="home"
-                className={inView ? '✅' : '❌'}
+                className={inView ? "✅" : "❌" }
+                onClick={() => {
+                  if(windowWidth < 1280){
+                    closeNav();
+                    setOpen(false);
+                  }
+                }}
               >
                 <span className="block pr-0 py-5 xl:p-5 xl:inline ml-0 text-white text-xl cursor-pointer hover:bg-secondary-color rounded-sm">
-                <FontAwesomeIcon
-                  icon={faHouse}
-                  className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
-                /> Inicio
+                  <FontAwesomeIcon
+                    icon={faHouse}
+                    className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
+                  />{" "}
+                  Inicio
                 </span>
               </Link>
 
               <Link
-              offset={-70}
+                offset={-70}
                 smooth
                 spy
                 to="about-me"
+                onClick={() => {
+                  if(windowWidth < 1280){
+                    closeNav();
+                    setOpen(false);
+                  }
+                }}
               >
                 <span className="block pr-0 py-5 xl:p-5 xl:inline ml-0 text-white text-xl cursor-pointer hover:bg-secondary-color rounded-sm">
-                <FontAwesomeIcon
-                  icon={faUser}
-                  className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
-                /> Sobre mi
+                  <FontAwesomeIcon
+                    icon={faUser}
+                    className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
+                  />{" "}
+                  Sobre mi
                 </span>
               </Link>
-              
+
               <Link
-              offset={-70}
+                offset={-70}
                 smooth
                 spy
                 to="services"
+                onClick={() => {
+                  if(windowWidth < 1280){
+                    closeNav();
+                    setOpen(false);
+                  }
+                }}
               >
                 <span className="block pr-0 py-5 xl:p-5 xl:inline ml-0 text-white text-xl cursor-pointer hover:bg-secondary-color rounded-sm">
-                <FontAwesomeIcon
-                  icon={faWrench}
-                  className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
-                /> Servicios
+                  <FontAwesomeIcon
+                    icon={faWrench}
+                    className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
+                  />{" "}
+                  Servicios
                 </span>
               </Link>
               <Link
-              offset={-70}
+                offset={-70}
                 smooth
                 spy
                 to="experience"
+                onClick={() => {
+                  if(windowWidth < 1280){
+                    closeNav();
+                    setOpen(false);
+                  }
+                }}
               >
                 <span className="block pr-0 py-5 xl:p-5 xl:inline ml-0 text-white text-xl cursor-pointer hover:bg-secondary-color rounded-sm">
-                <FontAwesomeIcon
-                  icon={faBusinessTime}
-                  className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
-                /> Experiencia
+                  <FontAwesomeIcon
+                    icon={faBusinessTime}
+                    className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
+                  />{" "}
+                  Experiencia
                 </span>
               </Link>
               <Link
-              offset={-70}
+                offset={-70}
                 smooth
                 spy
                 to="portafolio"
+                onClick={() => {
+                  if(windowWidth < 1280){
+                    closeNav();
+                    setOpen(false);
+                  }
+                }}
               >
                 <span className="block pr-0 py-5 xl:p-5 xl:inline ml-0 text-white text-xl cursor-pointer hover:bg-secondary-color rounded-sm">
-                <FontAwesomeIcon
-                  icon={faFolderOpen}
-                  className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
-                /> Portafolio
+                  <FontAwesomeIcon
+                    icon={faFolderOpen}
+                    className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
+                  />{" "}
+                  Portafolio
                 </span>
               </Link>
               <Link
-              offset={-70}
+                offset={-70}
                 smooth
                 spy
                 to="contact"
+                onClick={() => {
+                  if(windowWidth < 1280){
+                    closeNav();
+                    setOpen(false);
+                  }
+                }}
               >
                 <span className="block pr-0 py-5 xl:p-5 xl:inline ml-0 text-white text-xl cursor-pointer hover:bg-secondary-color rounded-sm">
-                <FontAwesomeIcon
-                  icon={faAddressCard}
-                  className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
-                /> Contacto
+                  <FontAwesomeIcon
+                    icon={faAddressCard}
+                    className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
+                  />{" "}
+                  Contacto
                 </span>
               </Link>
             </ul>
           </div>
         </div>
-
-        
       </nav>
-
-      
     </>
   );
 }
-
-

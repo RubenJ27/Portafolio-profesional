@@ -42,7 +42,7 @@ export default function HomePage() {
                 </Link>
                   
                   
-                  <a href="https://github.com/RubenJ27" className="flex bg-quinario-color-complement text-white w-[45%] h-[70%] rounded-3xl items-center">
+                  <a href="https://github.com/RubenJ27" target="_blank" className="flex bg-quinario-color-complement text-white w-[45%] h-[70%] rounded-3xl items-center">
                   <button className="flex bg-quinario-color-complement text-white w-[100%] h-2/3 rounded-3xl items-center"><img src="github.svg" className="w-2/4 h-[80%] justify-center self-center" alt="GitHub" />GitHub</button>
                   </a>
                   

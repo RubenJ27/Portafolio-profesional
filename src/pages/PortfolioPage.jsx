@@ -35,7 +35,7 @@ export const PortfolioPage = ({ url, title, description }) => {
                 {/* btns */}
                 <div className="flex flex-row w-full justify-around mb-5">
                   <div className="flex">
-                    <a href={project.url_github}>
+                    <a href={project.url_github} target="_blank">
                       <button className="flex sm: bg-quinario-color-complement text-white w-auto h-auto px-4 sm:px-16 rounded-3xl items-center py-1 mr-5">
                     <FontAwesomeIcon
                       icon={["fab", "github"]}
@@ -48,11 +48,12 @@ export const PortfolioPage = ({ url, title, description }) => {
                   </div>
 
                   <div className="flex">
-                  <a href={project.url_live}>
+                  <a href={project.url_live} target="_blank">
                   <button className="flex bg-quinario-color-complement text-white w-full h-full px-4 sm:px-16 rounded-3xl items-center py-1">
                     <FontAwesomeIcon
                       icon={faPlay}
                       className="text-white mr-3 text-3xl"
+
                     />
                     En vivo    
                   </button>

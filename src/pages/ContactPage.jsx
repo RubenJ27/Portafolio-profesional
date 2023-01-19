@@ -46,6 +46,7 @@ export default function ContactPage() {
                 </p>{" "}
                 <a
                   href="https://api.whatsapp.com/send?phone=573224675055&text=Hola, Necesito mas informacion para realizar proyecto!"
+                  target="_blank"
                   className="text-quinario-color-complement cursor-pointer font-medium mx-2"
                 >
                   mensaje privado
