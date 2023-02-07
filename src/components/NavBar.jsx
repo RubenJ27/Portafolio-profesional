@@ -30,10 +30,8 @@ export default function Navbar() {
     windowWidth = window.innerWidth;
     if(windowWidth < 1280){
       setNavInterceptor(-450);
-      console.log("if", navInterceptor)
     }else if(windowWidth > 1280){
       setNavInterceptor(-70);
-      console.log("else", navInterceptor)
     }
   }, []);
   window.onresize = function(){
