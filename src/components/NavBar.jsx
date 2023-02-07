@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { useInView } from "react-intersection-observer";
 import { Squash as Hamburger } from "hamburger-react";
@@ -22,16 +22,32 @@ export default function Navbar() {
 
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const [isOpen, setOpen] = useState(false);
-  let windowWidth = window.innerWidth
+  let [navInterceptor, setNavInterceptor] = useState();
+  let windowWidth = window.innerWidth;
+  
 
+  useEffect(() => {
+    windowWidth = window.innerWidth;
+    if(windowWidth < 1280){
+      setNavInterceptor(-450);
+      console.log("if", navInterceptor)
+    }else if(windowWidth > 1280){
+      setNavInterceptor(-70);
+      console.log("else", navInterceptor)
+    }
+  }, []);
   window.onresize = function(){
 
     windowWidth = window.innerWidth;
-    console.log(windowWidth)
+    if(windowWidth < 1280){
+      closeNav();
+      setOpen(false);
+    }
    };
    const closeNav = () => {
     setNavbarOpen(!navbarOpen);
   }
+  console.log(navInterceptor)
   
   return (
     <>
@@ -90,7 +106,7 @@ export default function Navbar() {
               </Link>
 
               <Link
-                offset={-70}
+                offset={navInterceptor}
                 smooth
                 spy
                 to="about-me"
@@ -111,7 +127,7 @@ export default function Navbar() {
               </Link>
 
               <Link
-                offset={-70}
+                offset={navInterceptor}
                 smooth
                 spy
                 to="services"
@@ -131,7 +147,7 @@ export default function Navbar() {
                 </span>
               </Link>
               <Link
-                offset={-70}
+                offset={navInterceptor}
                 smooth
                 spy
                 to="experience"
@@ -151,7 +167,7 @@ export default function Navbar() {
                 </span>
               </Link>
               <Link
-                offset={-70}
+                offset={navInterceptor}
                 smooth
                 spy
                 to="portafolio"
@@ -171,7 +187,7 @@ export default function Navbar() {
                 </span>
               </Link>
               <Link
-                offset={-70}
+                offset={navInterceptor}
                 smooth
                 spy
                 to="contact"
