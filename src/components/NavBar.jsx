@@ -45,8 +45,7 @@ export default function Navbar() {
    const closeNav = () => {
     setNavbarOpen(!navbarOpen);
   }
-  console.log(navInterceptor)
-  
+
   return (
     <>
       <nav className="flex flex-wrap items-center justify-center px-2 py-3 bg-primary-color sticky top-0 w-full z-50">
