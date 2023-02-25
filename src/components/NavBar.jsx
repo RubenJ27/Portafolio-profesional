@@ -20,7 +20,7 @@ export default function Navbar() {
     rootMargin: "-150px 0px 0px 0px",
   });
 
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(Boolean);
   const [isOpen, setOpen] = useState(Boolean);
  let [navInterceptor, setNavInterceptor] = useState(Number);
   let windowWidth = window.innerWidth;
