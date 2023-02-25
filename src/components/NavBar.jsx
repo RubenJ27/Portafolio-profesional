@@ -84,7 +84,7 @@ export default function Navbar() {
               ref={ref}
             >
               <Link
-                offset={-50}
+                offset={navInterceptor}
                 smooth
                 spy
                 to="home"
