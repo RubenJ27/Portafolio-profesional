@@ -104,7 +104,7 @@ export default function Navbar() {
               </Link>
 
               <Link
-                offset={navInterceptor}
+              /*  offset={navInterceptor}*/
                 smooth
                 spy
                 to="about-me"
@@ -125,7 +125,7 @@ export default function Navbar() {
               </Link>
 
               <Link
-                offset={navInterceptor}
+                /*  offset={navInterceptor}*/
                 smooth
                 spy
                 to="services"
@@ -145,7 +145,7 @@ export default function Navbar() {
                 </span>
               </Link>
               <Link
-                offset={navInterceptor}
+                /*  offset={navInterceptor}*/
                 smooth
                 spy
                 to="experience"
@@ -165,7 +165,7 @@ export default function Navbar() {
                 </span>
               </Link>
               <Link
-                offset={navInterceptor}
+                /*  offset={navInterceptor}*/
                 smooth
                 spy
                 to="portafolio"
@@ -185,7 +185,7 @@ export default function Navbar() {
                 </span>
               </Link>
               <Link
-                offset={navInterceptor}
+                /*  offset={navInterceptor}*/
                 smooth
                 spy
                 to="contact"
