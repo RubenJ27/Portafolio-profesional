@@ -20,11 +20,11 @@ export default function Navbar() {
     rootMargin: "-150px 0px 0px 0px",
   });
 
-  const [navbarOpen, setNavbarOpen] = useState(Boolean);
-  const [isOpen, setOpen] = useState(Boolean);
+  const [navbarOpen, setNavbarOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false);
  let [navInterceptor, setNavInterceptor] = useState(Number);
   let windowWidth = window.innerWidth;
-  
+  console.log(navbarOpen)
 
   useEffect(() => {
     windowWidth = window.innerWidth;
@@ -46,7 +46,7 @@ export default function Navbar() {
     }
    };
    const closeNav = () => {
-    setNavbarOpen(!navbarOpen);
+    setNavbarOpen(navbarOpen);
   }
 
   return (
