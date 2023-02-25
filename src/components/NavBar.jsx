@@ -21,16 +21,18 @@ export default function Navbar() {
   });
 
   const [navbarOpen, setNavbarOpen] = React.useState(false);
-  const [isOpen, setOpen] = useState(false);
- /* let [navInterceptor, setNavInterceptor] = useState();*/
+  const [isOpen, setOpen] = useState(Boolean);
+ let [navInterceptor, setNavInterceptor] = useState();
   let windowWidth = window.innerWidth;
   
 
   useEffect(() => {
     windowWidth = window.innerWidth;
     if(windowWidth < 1280){
+      setOpen(false)
       setNavInterceptor(-450);
     }else if(windowWidth > 1280){
+      setOpen(true)
       setNavInterceptor(-70);
     }
   }, []);
@@ -65,7 +67,7 @@ export default function Navbar() {
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <Hamburger /*toggled={isOpen} toggle={setOpen}*/ />
+              <Hamburger toggled={isOpen} toggle={setOpen} />
             </button>
           </div>
           <div
@@ -79,7 +81,7 @@ export default function Navbar() {
           >
             <ul
               className="flex w-full flex-col lg:flex lg:w-full list-none lg:ml-0 lg:flex-col xl:ml-auto xl:flex-row xl:w-auto"
-              ref={ref}
+              /* ref={ref} */
             >
               <Link
                 offset={-50}
@@ -89,8 +91,8 @@ export default function Navbar() {
                 className={inView ? "✅" : "❌" }
                 onClick={() => {
                   if(windowWidth < 1280){
-                  /*  closeNav();*/
-                    /*setOpen(false);*/
+                   closeNav();
+                    setOpen(false);
                   }
                 }}
               >
@@ -104,14 +106,14 @@ export default function Navbar() {
               </Link>
 
               <Link
-              /*  offset={navInterceptor}*/
+               offset={navInterceptor}
                 smooth
                 spy
                 to="about-me"
                 onClick={() => {
                   if(windowWidth < 1280){
-                    /*  closeNav();*/
-                    /*setOpen(false);*/
+                      closeNav();
+                    setOpen(false);
                   }
                 }}
               >
@@ -125,14 +127,14 @@ export default function Navbar() {
               </Link>
 
               <Link
-                /*  offset={navInterceptor}*/
+                 offset={navInterceptor}
                 smooth
                 spy
                 to="services"
                 onClick={() => {
                   if(windowWidth < 1280){
-                    /*  closeNav();*/
-                    /*setOpen(false);*/
+                     closeNav();
+                    setOpen(false);
                   }
                 }}
               >
@@ -145,14 +147,14 @@ export default function Navbar() {
                 </span>
               </Link>
               <Link
-                /*  offset={navInterceptor}*/
+                 offset={navInterceptor}
                 smooth
                 spy
                 to="experience"
                 onClick={() => {
                   if(windowWidth < 1280){
-                    /*  closeNav();*/
-                    /*setOpen(false);*/
+                     closeNav();
+                    setOpen(false);
                   }
                 }}
               >
@@ -165,14 +167,14 @@ export default function Navbar() {
                 </span>
               </Link>
               <Link
-                /*  offset={navInterceptor}*/
+                 offset={navInterceptor}
                 smooth
                 spy
                 to="portafolio"
                 onClick={() => {
                   if(windowWidth < 1280){
-                    /*  closeNav();*/
-                    /*setOpen(false);*/
+                     closeNav();
+                    setOpen(false);
                   }
                 }}
               >
@@ -185,14 +187,14 @@ export default function Navbar() {
                 </span>
               </Link>
               <Link
-                /*  offset={navInterceptor}*/
+                 offset={navInterceptor}
                 smooth
                 spy
                 to="contact"
                 onClick={() => {
                   if(windowWidth < 1280){
-                    /*  closeNav();*/
-                    /*setOpen(false);*/
+                     closeNav();
+                    setOpen(false);
                   }
                 }}
               >
