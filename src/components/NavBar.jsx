@@ -41,8 +41,8 @@ export default function Navbar() {
 
     windowWidth = window.innerWidth;
     if(windowWidth < 1280){
-     /* closeNav();*/
-    /*  setOpen(false);*/
+     closeNav();
+     setOpen(false);
     }
    };
    const closeNav = () => {
