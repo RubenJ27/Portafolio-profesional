@@ -22,7 +22,7 @@ export default function Navbar() {
 
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const [isOpen, setOpen] = useState(Boolean);
- let [navInterceptor, setNavInterceptor] = useState();
+ let [navInterceptor, setNavInterceptor] = useState(Number);
   let windowWidth = window.innerWidth;
   
 
@@ -81,7 +81,7 @@ export default function Navbar() {
           >
             <ul
               className="flex w-full flex-col lg:flex lg:w-full list-none lg:ml-0 lg:flex-col xl:ml-auto xl:flex-row xl:w-auto"
-              /* ref={ref} */
+              ref={ref}
             >
               <Link
                 offset={-50}
