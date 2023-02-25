@@ -22,7 +22,7 @@ export default function Navbar() {
 
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const [isOpen, setOpen] = useState(false);
-  let [navInterceptor, setNavInterceptor] = useState();
+ /* let [navInterceptor, setNavInterceptor] = useState();*/
   let windowWidth = window.innerWidth;
   
 
