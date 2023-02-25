@@ -40,7 +40,7 @@ export default function Navbar() {
     windowWidth = window.innerWidth;
     if(windowWidth < 1280){
      /* closeNav();*/
-      setOpen(false);
+    /*  setOpen(false);*/
     }
    };
    const closeNav = () => {
@@ -65,7 +65,7 @@ export default function Navbar() {
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <Hamburger toggled={isOpen} toggle={setOpen} />
+              <Hamburger /*toggled={isOpen} toggle={setOpen}*/ />
             </button>
           </div>
           <div
@@ -89,7 +89,7 @@ export default function Navbar() {
                 className={inView ? "✅" : "❌" }
                 onClick={() => {
                   if(windowWidth < 1280){
-                    closeNav();
+                  /*  closeNav();*/
                     /*setOpen(false);*/
                   }
                 }}
@@ -110,7 +110,7 @@ export default function Navbar() {
                 to="about-me"
                 onClick={() => {
                   if(windowWidth < 1280){
-                    closeNav();
+                    /*  closeNav();*/
                     /*setOpen(false);*/
                   }
                 }}
@@ -131,7 +131,7 @@ export default function Navbar() {
                 to="services"
                 onClick={() => {
                   if(windowWidth < 1280){
-                    closeNav();
+                    /*  closeNav();*/
                     /*setOpen(false);*/
                   }
                 }}
@@ -151,7 +151,7 @@ export default function Navbar() {
                 to="experience"
                 onClick={() => {
                   if(windowWidth < 1280){
-                    closeNav();
+                    /*  closeNav();*/
                     /*setOpen(false);*/
                   }
                 }}
@@ -171,7 +171,7 @@ export default function Navbar() {
                 to="portafolio"
                 onClick={() => {
                   if(windowWidth < 1280){
-                    closeNav();
+                    /*  closeNav();*/
                     /*setOpen(false);*/
                   }
                 }}
@@ -191,7 +191,7 @@ export default function Navbar() {
                 to="contact"
                 onClick={() => {
                   if(windowWidth < 1280){
-                    closeNav();
+                    /*  closeNav();*/
                     /*setOpen(false);*/
                   }
                 }}
