@@ -26,7 +26,7 @@ export default function Navbar() {
   let windowWidth = window.innerWidth;
   
 
-/*  useEffect(() => {
+  useEffect(() => {
     windowWidth = window.innerWidth;
     if(windowWidth < 1280){
       setNavInterceptor(-450);
@@ -34,7 +34,7 @@ export default function Navbar() {
       setNavInterceptor(-70);
     }
   }, []);
-  */
+  
   window.onresize = function(){
 
     windowWidth = window.innerWidth;
