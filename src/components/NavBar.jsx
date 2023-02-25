@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { useInView } from "react-intersection-observer";
+/*import { useInView } from "react-intersection-observer";*/
 import { Squash as Hamburger } from "hamburger-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
