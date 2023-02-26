@@ -24,7 +24,6 @@ export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
  let [navInterceptor, setNavInterceptor] = useState(Number);
   let windowWidth = window.innerWidth;
-  console.log(navbarOpen)
 
   useEffect(() => {
     windowWidth = window.innerWidth;
@@ -46,7 +45,8 @@ export default function Navbar() {
     }
    };
    const closeNav = () => {
-    setNavbarOpen(navbarOpen);
+    setNavbarOpen(false);
+    console.log(navbarOpen)
   }
 
   return (
