@@ -103,7 +103,7 @@ export default function ProfilePage() {
             <FontAwesomeIcon icon={faUserGroup} className="text-white text-5xl" />
             </div>
             <div className="flex-col m-5">
-              <h1 className="text-white font-extrabold text-3xl">130</h1>
+              <h1 className="text-white font-extrabold text-3xl">15</h1>
               <p className="text-white mt-2">Clientes satisfechos</p>
             </div>
           </div>
