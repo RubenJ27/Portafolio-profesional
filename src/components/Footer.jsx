@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <div className="flex w-full"> <p
               className="tall:text-[1.8vh] text-[2.7vh] sm:text-sm md:text-sm lg:text-2xl font-light leading-relaxed sm:whitespace-nowrap text-white items-center"
-            >Ruben Jaramillo Copyright © 2022 todos los derechos reservados. 
+            >Rubén Jaramillo Copyright © 2022 Todos los derechos reservados.
             </p></div>
            
           </div>
@@ -20,11 +20,11 @@ export default function Footer() {
           >
             <p
               className="hidden sm:hidden md:flex md:text-sm lg:text-2xl text-white flex-col lg:flex-row list-none lg:ml-auto justify-items-center justify-self-center items-center"
-            >Creado por <>&nbsp;</>
+            >Creado por<>&nbsp;</>
             </p>
             <p 
             className="hidden sm:hidden md:flex  md:text-sm lg:text-2xl font-bold text-secondary-color justify-items-center justify-self-center"
-          >Ruben Jaramillo
+          >Rubén Jaramillo
           </p>
             
             

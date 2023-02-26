@@ -121,7 +121,7 @@ export default function Navbar() {
                     icon={faUser}
                     className="mr-3 xl:hidden text-white items-start justify-start ml-2 text-2xl my-auto"
                   />{" "}
-                  Sobre mi
+                  Sobre mí
                 </span>
               </Link>
 

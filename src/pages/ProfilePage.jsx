@@ -60,7 +60,7 @@ export default function ProfilePage() {
                 {/* skill 3 */}
                 <div className="w-full mb-3">
                   <div className="flex justify-between mb-2">
-                    <h1 className="text-white">Gestion de proyectos</h1>{" "}
+                    <h1 className="text-white">Gestión de proyectos</h1>{" "}
                     {/* <h1 className="text-white">70%</h1> */}
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
@@ -81,7 +81,7 @@ export default function ProfilePage() {
             <FontAwesomeIcon icon={faThumbsUp} className="text-white text-5xl" />
             </div>
             <div className="flex-col m-5">
-              <h1 className="text-white font-extrabold text-3xl">19</h1>
+              <h1 className="text-white font-extrabold text-3xl">36</h1>
               <p className="text-white mt-2">Proyectos completados</p>
             </div>
           </div>
@@ -92,8 +92,8 @@ export default function ProfilePage() {
             <FontAwesomeIcon icon={faMugHot} className="text-white text-5xl" />
             </div>
             <div className="flex-col m-5">
-              <h1 className="text-white font-extrabold text-3xl">102</h1>
-              <p className="text-white mt-2">Tazas de cafe</p>
+              <h1 className="text-white font-extrabold text-3xl">20</h1>
+              <p className="text-white mt-2">Tazas de café</p>
             </div>
           </div>
 

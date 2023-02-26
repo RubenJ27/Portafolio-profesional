@@ -23,7 +23,7 @@ export default function Services() {
               </div>
               
               <h1 className="text-white font-bold text-center my-3 text-3xl">Desarrollo web</h1>
-              <p className="text-white w-2/3 text-center my-5 mx-auto">Se ofrece servicios de desarrollo de funciones específicas además de soluciones para solventar los problemas en tu empresa y mejorar los procesos.</p>
+              <p className="text-white w-2/3 text-center my-5 mx-auto">Ofrecemos no solo servicios de desarrollo de características específicas, sino también soluciones para resolver problemas corporativos y mejorar procesos.</p>
             </div>
 
            {/* card */}
@@ -37,7 +37,7 @@ export default function Services() {
               </div>
               
               <h1 className="text-white font-bold text-center my-3 text-3xl">Experiencia de usuario</h1>
-              <p className="text-white w-2/3 text-center my-5 mx-auto">Se trabaja de acuerdo a la mejor experiencia para la accesibilidad del proyecto y de la misma maneja de acuerdo a lo que requiera el cliente para solventar su problema.</p>
+              <p className="text-white w-2/3 text-center my-5 mx-auto">Trabajamos en la mejor experiencia para la accesibilidad del proyecto y gestionamos de acuerdo a las necesidades del cliente para resolver problemas.</p>
             </div>
 
             {/* card */}
@@ -51,7 +51,7 @@ export default function Services() {
               </div>
               
               <h1 className="text-white font-bold text-center my-3 text-3xl">Gestión de proyectos</h1>
-              <p className="text-white w-2/3 text-center my-5 mx-auto">En cuanto a gestión de proyectos se ofrece claridad en todo el tema de planificación de como se abordará y resolvera el problema o mejora.</p>
+              <p className="text-white w-2/3 text-center my-5 mx-auto">Cuando se trata de la gestión de proyectos, se ofrece claridad sobre los problemas generales de planificación y cómo se abordarán y resolverán los problemas o las mejoras.</p>
             </div>
 
             
@@ -65,7 +65,7 @@ export default function Services() {
             <div className="order-last hidden sm:flex sm:order-none">
                <p className="text-white">¿Buscas un trabajo personalizado?</p>
             </div>
-            <a href="https://api.whatsapp.com/send?phone=573224675055&text=Hola, Nececito mas informacion para realizar proyecto!" target="_blank" className="text-quinario-color-complement cursor-pointer mx-2 font-medium">Click aqui</a> <p className="text-white"> para contactar conmigo. </p><FontAwesomeIcon icon={faWhatsapp} className="text-white ml-2 text-2xl my-auto" />
+            <a href="https://api.whatsapp.com/send?phone=573224675055&text=Hola, Nececito mas informacion para realizar proyecto!" target="_blank" className="text-quinario-color-complement cursor-pointer mx-2 font-medium">Click aquí</a> <p className="text-white"> para contactar conmigo. </p><FontAwesomeIcon icon={faWhatsapp} className="text-white ml-2 text-2xl my-auto" />
           </div>
         </div>
 

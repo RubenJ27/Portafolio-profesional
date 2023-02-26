@@ -42,7 +42,7 @@ export default function ContactPage() {
               {/* click contact */}
               <div className="flex">
                 <p className="text-white">
-                  ¿No te gustan los formularios? envíame un
+                  ¿No te gustan los formularios? Envíame un
                 </p>{" "}
                 <a
                   href="https://api.whatsapp.com/send?phone=573224675055&text=Hola, Necesito mas informacion para realizar proyecto!"
@@ -97,7 +97,7 @@ export default function ContactPage() {
                         icon={faTriangleExclamation}
                         className="text-red-600 pt-1 text-2xl mr-2"
                       />
-                      El campo debe tener como minimo 3 caracteres{" "}
+                      El campo debe tener como mínimo 3 caracteres{" "}
                     </p>
                   )}
                   {errors.name?.type === "pattern" && (
@@ -142,7 +142,7 @@ export default function ContactPage() {
                         icon={faTriangleExclamation}
                         className="text-red-600 ml-1 pt-1 text-2xl my-auto mr-3"
                       />
-                      Introduzca una direccion de correo valida
+                      Introduzca una dirección de correo válida
                     </p>
                   )}
                 </div>
@@ -178,7 +178,7 @@ export default function ContactPage() {
                         icon={faTriangleExclamation}
                         className="text-red-600 pt-1 text-2xl mr-2"
                       />
-                      El campo debe tener como minimo 10 caracteres{" "}
+                      El campo debe tener como mínimo 10 caracteres{" "}
                     </p>
                   )}
                 </div>
