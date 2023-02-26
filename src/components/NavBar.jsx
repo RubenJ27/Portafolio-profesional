@@ -46,7 +46,6 @@ export default function Navbar() {
    };
    const closeNav = () => {
     setNavbarOpen(false);
-    console.log(navbarOpen)
   }
 
   return (
