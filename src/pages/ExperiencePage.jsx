@@ -52,7 +52,7 @@ export default function Experience() {
               <div className="flex flex-col my-4">
                 <div className="bg-secondary-color w-[90%] h-[40%] m-4 p-4 px-10 rounded-xl">
                   <p className="text-white text-start my-3">2022</p>
-                  <h1 className="text-white font-bold text-start my-3 text-3xl">Diplomado front end react</h1>
+                  <h1 className="text-white font-bold text-start my-3 text-3xl">Diplomado front-end react</h1>
                   <p className="text-white w-2/3 h-[33%] text-start my-5">
                     Diplomado realizado en la Fundación Internacional María Luisa de Moreno, especializado en desarrollo
                     fron end con react.
@@ -119,7 +119,7 @@ export default function Experience() {
               <div className="flex flex-col my-4">
                 <div className="bg-secondary-color w-[90%] h-[40%] m-4 p-4 px-10 rounded-xl">
                   <p className="text-white text-start my-3">2022 - Presente T-Evolvers</p>
-                  <h1 className="text-white font-bold text-start my-3 text-3xl">Frontend Developer</h1>
+                  <h1 className="text-white font-bold text-start my-3 text-3xl">Front-end Developer</h1>
                   <p className="text-white w-2/3 h-[33%] text-start my-5">
                     Se desarrollan funcionalidades específicas para solucionar y mejorar problemas corporativos.
                   </p>
@@ -136,7 +136,7 @@ export default function Experience() {
 
                 <div className="bg-secondary-color w-[90%] h-[40%] m-4 p-4 px-10 rounded-xl">
                   <p className="text-white text-start my-3">2021 - 2022</p>
-                  <h1 className="text-white font-bold text-start my-3 text-3xl">Front End Developer</h1>
+                  <h1 className="text-white font-bold text-start my-3 text-3xl">Front-End Developer</h1>
                   <p className="text-white w-2/3 h-[33%] text-start my-5">
                     Se desarrollaron funcionalidades específicas para solucionar las problemáticas de una empresa.
                   </p>

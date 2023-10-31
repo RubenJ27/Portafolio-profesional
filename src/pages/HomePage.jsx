@@ -9,7 +9,7 @@ export default function HomePage() {
           <img src="AvatarMaker-2.png" className="flex w-5/4 h-2/4 rounded-full mt-2 self-center" alt="" />
           <h1 className="flex text-white text-4xl font-bold justify-center my-2">Ruben Jaramillo</h1>
           <p className="flex text-white text-[1.4rem] font-normal justify-center mb-2">
-            Soy un desarrollador Front End
+            Soy un desarrollador Front-End
           </p>
 
           <div className="flex justify-center w-full">
