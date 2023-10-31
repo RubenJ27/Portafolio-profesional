@@ -1,5 +1,3 @@
-import { Link } from "react-scroll";
-
 export default function HomePage() {
   return (
     <>
@@ -8,35 +6,17 @@ export default function HomePage() {
         id="home"
       >
         <div className="flex flex-col justify-start mt-6 z-30">
-          <img
-            src="AvatarMaker-2.png"
-            className="flex w-5/4 h-2/4 rounded-full mt-2 self-center"
-            alt=""
-          />
-          <h1 className="flex text-white text-4xl font-bold justify-center my-2">
-            Ruben Jaramillo
-          </h1>
+          <img src="AvatarMaker-2.png" className="flex w-5/4 h-2/4 rounded-full mt-2 self-center" alt="" />
+          <h1 className="flex text-white text-4xl font-bold justify-center my-2">Ruben Jaramillo</h1>
           <p className="flex text-white text-[1.4rem] font-normal justify-center mb-2">
-            Soy un desarrollador Front-End
+            Soy un desarrollador Front End
           </p>
 
           <div className="flex justify-center w-full">
-            <a
-              href="#"
-              className="flex p-2 items-center justify-center w-auto h-auto"
-              target="_blank"
-            >
-              <img
-                src="instagram.svg"
-                className="w-11/12 h-3/4"
-                alt="Instagram"
-              />
+            <a href="#" className="flex p-2 items-center justify-center w-auto h-auto" target="_blank">
+              <img src="instagram.svg" className="w-11/12 h-3/4" alt="Instagram" />
             </a>
-            <a
-              href="#"
-              className="flex p-2 items-center justify-center"
-              target="_blank"
-            >
+            <a href="#" className="flex p-2 items-center justify-center" target="_blank">
               <img src="twitter.svg" className="w-11/12 h-3/4" alt="Twitter" />
             </a>
             <a
@@ -44,34 +24,14 @@ export default function HomePage() {
               className="flex p-2 items-center justify-center"
               target="_blank"
             >
-              <img
-                src="linkedin.svg"
-                className="w-11/12 h-3/4"
-                alt="LinkedIn"
-              />
+              <img src="linkedin.svg" className="w-11/12 h-3/4" alt="LinkedIn" />
             </a>
             {/*  */}
-            <a
-              href="#"
-              className="flex p-2 items-center justify-center"
-              target="_blank"
-            >
-              <img
-                src="dribbble.svg"
-                className="w-11/12 h-3/4"
-                alt="Dribbble"
-              />
+            <a href="#" className="flex p-2 items-center justify-center" target="_blank">
+              <img src="dribbble.svg" className="w-11/12 h-3/4" alt="Dribbble" />
             </a>
-            <a
-              href="#"
-              className="flex p-2 items-center justify-center"
-              target="_blank"
-            >
-              <img
-                src="pinterest.svg"
-                className="w-11/12 h-3/4"
-                alt="Pinterest"
-              />
+            <a href="#" className="flex p-2 items-center justify-center" target="_blank">
+              <img src="pinterest.svg" className="w-11/12 h-3/4" alt="Pinterest" />
             </a>
           </div>
 
@@ -92,7 +52,9 @@ export default function HomePage() {
               target="_blank"
               className="flex bg-quinario-color-complement text-white w-[45%] h-[70%] rounded-3xl items-center mr-5"
             >
-              <button className="flex justify-center bg-quinario-color-complement text-white w-[100%] h-2/3 rounded-3xl items-center">Perfil</button>
+              <button className="flex justify-center bg-quinario-color-complement text-white w-[100%] h-2/3 rounded-3xl items-center">
+                Perfil
+              </button>
             </a>
 
             <a
@@ -101,11 +63,7 @@ export default function HomePage() {
               className="flex bg-quinario-color-complement text-white w-[45%] h-[70%] rounded-3xl items-center"
             >
               <button className="flex bg-quinario-color-complement text-white w-[100%] h-2/3 rounded-3xl items-center">
-                <img
-                  src="github.svg"
-                  className="w-2/4 h-[80%] justify-center self-center"
-                  alt="GitHub"
-                />
+                <img src="github.svg" className="w-2/4 h-[80%] justify-center self-center" alt="GitHub" />
                 GitHub
               </button>
             </a>
