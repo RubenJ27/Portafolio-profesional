@@ -118,7 +118,3 @@ yarn deploy
 ## 📄 Licencia
 
 Este proyecto es personal y de código abierto. Puedes usarlo como referencia para tu propio portafolio.
-
----
-
-¿Te gustaría agregar instrucciones para contribuir, deploy avanzado, o detalles sobre cada sección? ¡Avísame si necesitas una
