@@ -1,8 +1,3 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
-import { useInView } from "react-intersection-observer";
-import { Squash as Hamburger } from "hamburger-react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAddressCard,
   faBusinessTime,
@@ -11,6 +6,11 @@ import {
   faUser,
   faWrench,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Squash as Hamburger } from "hamburger-react";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const { ref, inView } = useInView({
@@ -22,31 +22,30 @@ export default function Navbar() {
 
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [isOpen, setOpen] = useState(false);
- let [navInterceptor, setNavInterceptor] = useState(Number);
+  let [navInterceptor, setNavInterceptor] = useState(Number);
   let windowWidth = window.innerWidth;
 
   useEffect(() => {
     windowWidth = window.innerWidth;
-    if(windowWidth < 1280){
-      setOpen(false)
+    if (windowWidth < 1280) {
+      setOpen(false);
       setNavInterceptor(-450);
-    }else if(windowWidth > 1280){
-      setOpen(true)
+    } else if (windowWidth > 1280) {
+      setOpen(true);
       setNavInterceptor(-70);
     }
   }, []);
-  
-  window.onresize = function(){
 
+  window.onresize = function () {
     windowWidth = window.innerWidth;
-    if(windowWidth < 1280){
-     closeNav();
-     setOpen(false);
+    if (windowWidth < 1280) {
+      closeNav();
+      setOpen(false);
     }
-   };
-   const closeNav = () => {
+  };
+  const closeNav = () => {
     setNavbarOpen(false);
-  }
+  };
 
   return (
     <>
@@ -72,9 +71,7 @@ export default function Navbar() {
           <div
             className={
               "xl:flex flex-grow items-center" +
-              (navbarOpen
-                ? " animate__animated animate__fadeInLeftBig flex"
-                : " hidden")
+              (navbarOpen ? " animate__animated animate__fadeInLeftBig flex" : " hidden")
             }
             id="example-navbar-danger"
           >
@@ -87,10 +84,10 @@ export default function Navbar() {
                 smooth
                 spy
                 to="home"
-                className={inView ? "✅" : "❌" }
+                className={inView ? "✅" : "❌"}
                 onClick={() => {
-                  if(windowWidth < 1280){
-                   closeNav();
+                  if (windowWidth < 1280) {
+                    closeNav();
                     setOpen(false);
                   }
                 }}
@@ -105,13 +102,13 @@ export default function Navbar() {
               </Link>
 
               <Link
-               offset={navInterceptor}
+                offset={navInterceptor}
                 smooth
                 spy
                 to="about-me"
                 onClick={() => {
-                  if(windowWidth < 1280){
-                      closeNav();
+                  if (windowWidth < 1280) {
+                    closeNav();
                     setOpen(false);
                   }
                 }}
@@ -126,13 +123,13 @@ export default function Navbar() {
               </Link>
 
               <Link
-                 offset={navInterceptor}
+                offset={navInterceptor}
                 smooth
                 spy
                 to="services"
                 onClick={() => {
-                  if(windowWidth < 1280){
-                     closeNav();
+                  if (windowWidth < 1280) {
+                    closeNav();
                     setOpen(false);
                   }
                 }}
@@ -146,13 +143,13 @@ export default function Navbar() {
                 </span>
               </Link>
               <Link
-                 offset={navInterceptor}
+                offset={navInterceptor}
                 smooth
                 spy
                 to="experience"
                 onClick={() => {
-                  if(windowWidth < 1280){
-                     closeNav();
+                  if (windowWidth < 1280) {
+                    closeNav();
                     setOpen(false);
                   }
                 }}
@@ -166,13 +163,13 @@ export default function Navbar() {
                 </span>
               </Link>
               <Link
-                 offset={navInterceptor}
+                offset={navInterceptor}
                 smooth
                 spy
                 to="portafolio"
                 onClick={() => {
-                  if(windowWidth < 1280){
-                     closeNav();
+                  if (windowWidth < 1280) {
+                    closeNav();
                     setOpen(false);
                   }
                 }}
@@ -186,13 +183,13 @@ export default function Navbar() {
                 </span>
               </Link>
               <Link
-                 offset={navInterceptor}
+                offset={navInterceptor}
                 smooth
                 spy
                 to="contact"
                 onClick={() => {
-                  if(windowWidth < 1280){
-                     closeNav();
+                  if (windowWidth < 1280) {
+                    closeNav();
                     setOpen(false);
                   }
                 }}

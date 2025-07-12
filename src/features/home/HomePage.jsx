@@ -13,12 +13,6 @@ export default function HomePage() {
           </p>
 
           <div className="flex justify-center w-full">
-            <a href="#" className="flex p-2 items-center justify-center w-auto h-auto" target="_blank">
-              <img src="instagram.svg" className="w-11/12 h-3/4" alt="Instagram" />
-            </a>
-            <a href="#" className="flex p-2 items-center justify-center" target="_blank">
-              <img src="twitter.svg" className="w-11/12 h-3/4" alt="Twitter" />
-            </a>
             <a
               href="https://www.linkedin.com/in/ruben-dario-jaramillo-cervantes-a193a8192/"
               className="flex p-2 items-center justify-center"
